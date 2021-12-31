@@ -35,6 +35,12 @@
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;theuphill.tistory.com&#x2F;12&quot;&gt;완전히 실행 가능한 Spring Boot 배포 (tistory.com)&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;pid-pail-jaddon-ssaensseon&quot;&gt;pid 파일 자동 생성&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;code&gt;spring.pid.file&lt;&#x2F;code&gt; 설정을 지정하면 해당 경로 파일에 실행된 프로세스의 pid 를 저장한다.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;ApplicationPidFileWriter&lt;&#x2F;code&gt; 를 어플리케이션 리스너로 등록해줘야 한다.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;toshi15shkim.github.io&#x2F;articles&#x2F;2019-09&#x2F;spring-boot-pid&quot;&gt;Boot로 실행시 pid 자동 생성 방법 | Toshi의 개발 블로그 (toshi15shkim.github.io)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;spring-boot-haeheu-ssebissero-ddeunrog&quot;&gt;spring boot 앱을 서비스로 등록&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.dante2k.com&#x2F;564&quot;&gt;ubuntu server systemd 에 spring boot jar 서비스로 등록하기 (dante2k.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
