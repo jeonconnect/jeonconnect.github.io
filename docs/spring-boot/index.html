@@ -64,6 +64,10 @@
                     </li>
                     
                     <li>
+                        <a href="https://jeonconnect.github.io/spring-boot/#nginx-hyeoddon">nginx 연동</a>
+                    </li>
+                    
+                    <li>
                         <a href="https://jeonconnect.github.io/spring-boot/#pid-pail-jaddon-ssaensseon">pid 파일 자동 생성</a>
                     </li>
                     
@@ -97,12 +101,29 @@
 <h2 id="spring-boot-jar-bbaposie-application-yml-bbaci">spring boot jar 배포시에 application.yml 배치</h2>
 <p>현재 실행 디렉토리의 config 서브 디렉토리 또는 현재 실행 디렉토리 등에 application.yml 을 배치하면, jar 에 포함된 application.yml 의 설정을 override 한다.</p>
 <ul>
-<li>
-<p>[<a href="https://www.latera.kr/reference/java/2019-09-29-spring-boot-config-externalize/">Spring Boot] 외부에서 설정 주입하기 - Increment (latera.kr)</a></p>
-</li>
-<li>
-<p><a href="https://theuphill.tistory.com/12">완전히 실행 가능한 Spring Boot 배포 (tistory.com)</a></p>
-</li>
+<li>[<a href="https://www.latera.kr/reference/java/2019-09-29-spring-boot-config-externalize/">Spring Boot] 외부에서 설정 주입하기 - Increment (latera.kr)</a></li>
+<li><a href="https://theuphill.tistory.com/12">완전히 실행 가능한 Spring Boot 배포 (tistory.com)</a></li>
+</ul>
+<h2 id="nginx-hyeoddon">nginx 연동</h2>
+<p>특정 경로를 WAS 로 리다이렉트한다.</p>
+<p><code>/etc/nginx/sites-available/xxxxxx.com</code>  설정에 추가한다.</p>
+<pre><code>server {
+
+		...
+
+
+		location &#x2F;xxx {
+                proxy_pass http:&#x2F;&#x2F;localhost:8080&#x2F;xxx;
+                proxy_ssl_server_name on;
+        }
+
+		...
+
+}
+</code></pre>
+<p><code>proxy_ssl_server_name on;</code> 이 없으면 502 에러가 발생할 수 있다.</p>
+<ul>
+<li>https://stackoverflow.com/a/49116797</li>
 </ul>
 <h2 id="pid-pail-jaddon-ssaensseon">pid 파일 자동 생성</h2>
 <p><code>spring.pid.file</code> 설정을 지정하면 해당 경로 파일에 실행된 프로세스의 pid 를 저장한다.</p>

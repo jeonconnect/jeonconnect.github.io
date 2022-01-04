@@ -28,12 +28,29 @@
 &lt;h2 id=&quot;spring-boot-jar-bbaposie-application-yml-bbaci&quot;&gt;spring boot jar 배포시에 application.yml 배치&lt;&#x2F;h2&gt;
 &lt;p&gt;현재 실행 디렉토리의 config 서브 디렉토리 또는 현재 실행 디렉토리 등에 application.yml 을 배치하면, jar 에 포함된 application.yml 의 설정을 override 한다.&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[&lt;a href=&quot;https:&#x2F;&#x2F;www.latera.kr&#x2F;reference&#x2F;java&#x2F;2019-09-29-spring-boot-config-externalize&#x2F;&quot;&gt;Spring Boot] 외부에서 설정 주입하기 - Increment (latera.kr)&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;theuphill.tistory.com&#x2F;12&quot;&gt;완전히 실행 가능한 Spring Boot 배포 (tistory.com)&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
+&lt;li&gt;[&lt;a href=&quot;https:&#x2F;&#x2F;www.latera.kr&#x2F;reference&#x2F;java&#x2F;2019-09-29-spring-boot-config-externalize&#x2F;&quot;&gt;Spring Boot] 외부에서 설정 주입하기 - Increment (latera.kr)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;theuphill.tistory.com&#x2F;12&quot;&gt;완전히 실행 가능한 Spring Boot 배포 (tistory.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;nginx-hyeoddon&quot;&gt;nginx 연동&lt;&#x2F;h2&gt;
+&lt;p&gt;특정 경로를 WAS 로 리다이렉트한다.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;&#x2F;etc&#x2F;nginx&#x2F;sites-available&#x2F;xxxxxx.com&lt;&#x2F;code&gt;  설정에 추가한다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;server {
+
+		...
+
+
+		location &amp;#x2F;xxx {
+                proxy_pass http:&amp;#x2F;&amp;#x2F;localhost:8080&amp;#x2F;xxx;
+                proxy_ssl_server_name on;
+        }
+
+		...
+
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;code&gt;proxy_ssl_server_name on;&lt;&#x2F;code&gt; 이 없으면 502 에러가 발생할 수 있다.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;49116797&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;pid-pail-jaddon-ssaensseon&quot;&gt;pid 파일 자동 생성&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;code&gt;spring.pid.file&lt;&#x2F;code&gt; 설정을 지정하면 해당 경로 파일에 실행된 프로세스의 pid 를 저장한다.&lt;&#x2F;p&gt;
