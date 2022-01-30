@@ -5,8 +5,22 @@
 	<link href="https://jeonconnect.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://jeonconnect.github.io"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-01-06T00:00:00+00:00</updated>
+	<updated>2022-01-30T00:00:00+00:00</updated>
 	<id>https://jeonconnect.github.io/atom.xml</id>
+	<entry xml:lang="en">
+		<title>git</title>
+		<published>2022-01-30T00:00:00+00:00</published>
+		<updated>2022-01-30T00:00:00+00:00</updated>
+		<link href="https://jeonconnect.github.io/git/" type="text/html"/>
+		<id>https://jeonconnect.github.io/git/</id>
+		<content type="html">&lt;h1 id=&quot;sseojjeon&quot;&gt;설정&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;sseojjeonthanmog-jegge&quot;&gt;설정항목 제거&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;code&gt;--unset&lt;&#x2F;code&gt; 스위치를 사용한다.
+다음 예시를 참고&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git config --global --unset user.name
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>WebAssembly</title>
 		<published>2022-01-06T00:00:00+00:00</published>
