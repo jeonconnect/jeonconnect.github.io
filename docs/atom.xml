@@ -5,8 +5,52 @@
 	<link href="https://jeonconnect.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://jeonconnect.github.io"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-01-30T00:00:00+00:00</updated>
+	<updated>2022-02-11T00:00:00+00:00</updated>
 	<id>https://jeonconnect.github.io/atom.xml</id>
+	<entry xml:lang="en">
+		<title>powershell</title>
+		<published>2022-02-11T00:00:00+00:00</published>
+		<updated>2022-02-11T00:00:00+00:00</updated>
+		<link href="https://jeonconnect.github.io/powershell/" type="text/html"/>
+		<id>https://jeonconnect.github.io/powershell/</id>
+		<content type="html">&lt;h1 id=&quot;pailsissetot&quot;&gt;파일시스템&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;ringkeu&quot;&gt;링크&lt;&#x2F;h2&gt;
+&lt;p&gt;심볼릭 링크&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;New-Item -ItemType SymbolicLink -Path &amp;quot;Link&amp;quot; -Target &amp;quot;Target&amp;quot;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;하드링크&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;New-Item -ItemType HardLink -Path &amp;quot;Link&amp;quot; -Target &amp;quot;Target&amp;quot; 
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;camgo&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;winaero.com&#x2F;create-symbolic-link-windows-10-powershell&#x2F;&quot;&gt;Create Symbolic Link in Windows 10 with PowerShell (winaero.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>libgdx</title>
+		<published>2022-02-05T00:00:00+00:00</published>
+		<updated>2022-02-05T00:00:00+00:00</updated>
+		<link href="https://jeonconnect.github.io/libgdx/" type="text/html"/>
+		<id>https://jeonconnect.github.io/libgdx/</id>
+		<content type="html">&lt;h1 id=&quot;robovm&quot;&gt;robovm&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;appstore-ddeunrog-hwekeupeulrou&quot;&gt;appstore 등록 워크플로우&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;프로젝트의 ios 번들아이디를 동일하게 가지는 앱을 xcode 에서 생성한 후 앱스토어에 최초 한번 등록한다.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;robovm 으로 생성한 ipa 를 &lt;code&gt;xcrun&lt;&#x2F;code&gt; 을 이용해 업로드한다.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre&gt;&lt;code&gt;xcrun altool --upload-app --type ios --file &amp;quot;&amp;#x2F;some&amp;#x2F;path&amp;#x2F;app.ipa&amp;quot; --username &amp;quot;apple id&amp;quot; --password &amp;quot;password&amp;quot;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;camgo&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[&lt;a href=&quot;https:&#x2F;&#x2F;kjun.kr&#x2F;986&quot;&gt;Xamarin] Application Loader 를 이용하지 않고 ipa 파일 업로드하기 :: kjun.kr (kjcoder.tistory.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>git</title>
 		<published>2022-01-30T00:00:00+00:00</published>
