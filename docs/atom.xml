@@ -25,6 +25,14 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;winaero.com&#x2F;create-symbolic-link-windows-10-powershell&#x2F;&quot;&gt;Create Symbolic Link in Windows 10 with PowerShell (winaero.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ssaje&quot;&gt;삭제&lt;&#x2F;h2&gt;
+&lt;p&gt;삭제시 &lt;code&gt;-Force&lt;&#x2F;code&gt; 스위치를 붙이지 않으면 권한 문제가 발생하는 경우가 많다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;Remove-Item &amp;quot;c:\some\path&amp;quot; -Recurse -Force
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;camgo-1&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;25806947&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 	<entry xml:lang="en">

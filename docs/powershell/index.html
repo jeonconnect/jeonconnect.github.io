@@ -63,6 +63,10 @@
                         <a href="https://jeonconnect.github.io/powershell/#ringkeu">링크</a>
                     </li>
                     
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#ssaje">삭제</a>
+                    </li>
+                    
                 </ul>
                 
             </li>
@@ -83,6 +87,14 @@
 <h3 id="camgo">참고</h3>
 <ul>
 <li><a href="https://winaero.com/create-symbolic-link-windows-10-powershell/">Create Symbolic Link in Windows 10 with PowerShell (winaero.com)</a></li>
+</ul>
+<h2 id="ssaje">삭제</h2>
+<p>삭제시 <code>-Force</code> 스위치를 붙이지 않으면 권한 문제가 발생하는 경우가 많다.</p>
+<pre><code>Remove-Item &quot;c:\some\path&quot; -Recurse -Force
+</code></pre>
+<h3 id="camgo-1">참고</h3>
+<ul>
+<li>https://stackoverflow.com/a/25806947</li>
 </ul>
 
     </div>
