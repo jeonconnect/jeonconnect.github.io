@@ -62,11 +62,18 @@
         <loc>https://jeonconnect.github.io/tags/webassembly/</loc>
     </url>
     <url>
+        <loc>https://jeonconnect.github.io/tags/windows/</loc>
+    </url>
+    <url>
         <loc>https://jeonconnect.github.io/webassembly/</loc>
         <lastmod>2022-01-06</lastmod>
     </url>
     <url>
         <loc>https://jeonconnect.github.io/what-is-zola/</loc>
         <lastmod>2020-06-06</lastmod>
+    </url>
+    <url>
+        <loc>https://jeonconnect.github.io/windows/</loc>
+        <lastmod>2022-02-23</lastmod>
     </url>
 </urlset>
