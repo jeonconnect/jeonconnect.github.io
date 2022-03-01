@@ -38,7 +38,20 @@
 		<updated>2022-02-15T00:00:00+00:00</updated>
 		<link href="https://jeonconnect.github.io/powershell/" type="text/html"/>
 		<id>https://jeonconnect.github.io/powershell/</id>
-		<content type="html">&lt;h1 id=&quot;pailsissetot&quot;&gt;파일시스템&lt;&#x2F;h1&gt;
+		<content type="html">&lt;h1 id=&quot;sseoci&quot;&gt;설치&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;mac&quot;&gt;Mac&lt;&#x2F;h2&gt;
+&lt;p&gt;설치&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;brew install --cask powershell
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;업그레이드&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;brew update
+brew upgrade powershell --cask
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;camgo&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;docs.microsoft.com&#x2F;ko-kr&#x2F;powershell&#x2F;scripting&#x2F;install&#x2F;installing-powershell-on-macos?view=powershell-7.2&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;pailsissetot&quot;&gt;파일시스템&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;ringkeu&quot;&gt;링크&lt;&#x2F;h2&gt;
 &lt;p&gt;심볼릭 링크&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;New-Item -ItemType SymbolicLink -Path &amp;quot;Link&amp;quot; -Target &amp;quot;Target&amp;quot;
@@ -46,7 +59,7 @@
 &lt;p&gt;하드링크&lt;&#x2F;p&gt;
 &lt;pre&gt;&lt;code&gt;New-Item -ItemType HardLink -Path &amp;quot;Link&amp;quot; -Target &amp;quot;Target&amp;quot; 
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;camgo&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;camgo-1&quot;&gt;참고&lt;&#x2F;h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;winaero.com&#x2F;create-symbolic-link-windows-10-powershell&#x2F;&quot;&gt;Create Symbolic Link in Windows 10 with PowerShell (winaero.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -54,7 +67,7 @@
 &lt;p&gt;삭제시 &lt;code&gt;-Force&lt;&#x2F;code&gt; 스위치를 붙이지 않으면 권한 문제가 발생하는 경우가 많다.&lt;&#x2F;p&gt;
 &lt;pre&gt;&lt;code&gt;Remove-Item &amp;quot;c:\some\path&amp;quot; -Recurse -Force
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;camgo-1&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;camgo-2&quot;&gt;참고&lt;&#x2F;h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;25806947&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;25806947&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
