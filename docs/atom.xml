@@ -39,7 +39,7 @@
 		<link href="https://jeonconnect.github.io/powershell/" type="text/html"/>
 		<id>https://jeonconnect.github.io/powershell/</id>
 		<content type="html">&lt;h1 id=&quot;sseoci&quot;&gt;설치&lt;&#x2F;h1&gt;
-&lt;h2 id=&quot;mac&quot;&gt;Mac&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;macosesse-sseocihagi&quot;&gt;MacOS에서 설치하기&lt;&#x2F;h2&gt;
 &lt;p&gt;설치&lt;&#x2F;p&gt;
 &lt;pre&gt;&lt;code&gt;brew install --cask powershell
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
@@ -50,6 +50,11 @@ brew upgrade powershell --cask
 &lt;h3 id=&quot;camgo&quot;&gt;참고&lt;&#x2F;h3&gt;
 &lt;ul&gt;
 &lt;li&gt;https:&#x2F;&#x2F;docs.microsoft.com&#x2F;ko-kr&#x2F;powershell&#x2F;scripting&#x2F;install&#x2F;installing-powershell-on-macos?view=powershell-7.2&lt;&#x2F;li&gt;
+&lt;li&gt;https:&#x2F;&#x2F;zigford.org&#x2F;setting-powershell-as-default-on-macos.htmls
+&lt;ul&gt;
+&lt;li&gt;기본 쉘로 설정&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h1 id=&quot;pailsissetot&quot;&gt;파일시스템&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;ringkeu&quot;&gt;링크&lt;&#x2F;h2&gt;
