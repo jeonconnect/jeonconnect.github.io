@@ -8,6 +8,23 @@
 	<updated>2022-03-03T00:00:00+00:00</updated>
 	<id>https://jeonconnect.github.io/atom.xml</id>
 	<entry xml:lang="en">
+		<title>2022</title>
+		<published>2022-03-03T00:00:00+00:00</published>
+		<updated>2022-03-03T00:00:00+00:00</updated>
+		<link href="https://jeonconnect.github.io/2022/" type="text/html"/>
+		<id>https://jeonconnect.github.io/2022/</id>
+		<content type="html">&lt;h1 id=&quot;202203&quot;&gt;202203&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;20220303&quot;&gt;20220303&lt;&#x2F;h2&gt;
+&lt;p&gt;자바 라이브러리를 github 로 관리해야 한다.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;57371945&#x2F;how-to-access-private-github-package-registry-via-gradle&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;202202&quot;&gt;202202&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;20220217&quot;&gt;20220217&lt;&#x2F;h2&gt;
+&lt;p&gt;조정의 반복&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
 		<title>java</title>
 		<published>2022-03-03T00:00:00+00:00</published>
 		<updated>2022-03-03T00:00:00+00:00</updated>
@@ -61,17 +78,6 @@ brew install --cask adoptopenjdk8-openj9
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.top-password.com&#x2F;blog&#x2F;how-to-open-and-use-windows-10-touch-keyboard&#x2F;&quot;&gt;How to Open and Use Windows 10 Touch Keyboard | Password Recovery (top-password.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-</content>
-	</entry>
-	<entry xml:lang="en">
-		<title>2022</title>
-		<published>2022-02-17T00:00:00+00:00</published>
-		<updated>2022-02-17T00:00:00+00:00</updated>
-		<link href="https://jeonconnect.github.io/2022/" type="text/html"/>
-		<id>https://jeonconnect.github.io/2022/</id>
-		<content type="html">&lt;h1 id=&quot;202202&quot;&gt;202202&lt;&#x2F;h1&gt;
-&lt;h2 id=&quot;20220217&quot;&gt;20220217&lt;&#x2F;h2&gt;
-&lt;p&gt;조정의 반복&lt;&#x2F;p&gt;
 </content>
 	</entry>
 	<entry xml:lang="en">
