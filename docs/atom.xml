@@ -5,8 +5,50 @@
 	<link href="https://jeonconnect.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://jeonconnect.github.io"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-02-23T00:00:00+00:00</updated>
+	<updated>2022-03-03T00:00:00+00:00</updated>
 	<id>https://jeonconnect.github.io/atom.xml</id>
+	<entry xml:lang="en">
+		<title>java</title>
+		<published>2022-03-03T00:00:00+00:00</published>
+		<updated>2022-03-03T00:00:00+00:00</updated>
+		<link href="https://jeonconnect.github.io/java/" type="text/html"/>
+		<id>https://jeonconnect.github.io/java/</id>
+		<content type="html">&lt;h1 id=&quot;openjdk-sseoci&quot;&gt;OpenJDK 설치&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;macos&quot;&gt;MacOS&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;brew 를 통해 설치한다.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre&gt;&lt;code&gt;brew tap AdoptOpenJDK&amp;#x2F;openjdk
+brew install --cask adoptopenjdk8-openj9
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;설치할 버전을 선택할 수 있다.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;github.com&#x2F;AdoptOpenJDK&#x2F;homebrew-openjdk#available-versions&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Cask adoptopenjdk8 exists in multiple taps&lt;&#x2F;code&gt; 에러가 발생하면 다음과 같이 조치한다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;rm &amp;#x2F;usr&amp;#x2F;local&amp;#x2F;Homebrew&amp;#x2F;Library&amp;#x2F;Taps&amp;#x2F;homebrew&amp;#x2F;homebrew-cask-versions&amp;#x2F;Casks&amp;#x2F;adoptopenjdk8.rb
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;github.com&#x2F;AdoptOpenJDK&#x2F;homebrew-openjdk&#x2F;issues&#x2F;106&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;설치되어있는 JDK 리스트 확인&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;#x2F;usr&amp;#x2F;libexec&amp;#x2F;java_home -V
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;shell profile 설정&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;export JAVA_HOME=`&amp;#x2F;usr&amp;#x2F;libexec&amp;#x2F;java_home -v 1.8.0_292`
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>windows</title>
 		<published>2022-02-23T00:00:00+00:00</published>

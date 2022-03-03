@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <title>java</title>
+    <meta name="description" content="blog">
+
+    <link rel="stylesheet" href="https://jeonconnect.github.io/main.css">
+
+    
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://jeonconnect.github.io/atom.xml">
+    
+
+    
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to content</a>
+    <div class="container">
+        <header> 
+            <h1 class="site-header">
+                <a href="https:&#x2F;&#x2F;jeonconnect.github.io">jeonconnect</a>
+            </h1>
+            <nav>
+                
+                
+                
+                <a  href="https:&#x2F;&#x2F;jeonconnect.github.io&#x2F;about&#x2F;">About</a>
+                
+                
+                <a  href="https:&#x2F;&#x2F;jeonconnect.github.io&#x2F;tags&#x2F;">Tags</a>
+                
+                
+            </nav>
+        </header>
+        <main id="main" tabindex="-1">
+            
+
+<article class="post">
+    <header>
+        <h1>java</h1>
+    </header>
+
+    <div class="content">
+
+        <!--
+            목차 표시 추가
+            https://www.getzola.org/documentation/content/table-of-contents/
+        -->
+        
+        <ul>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/java/#openjdk-sseoci">OpenJDK 설치</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/java/#macos">MacOS</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+        </ul>
+        
+        <!-- 목차 표시 추가 끝 -->
+
+
+        <h1 id="openjdk-sseoci">OpenJDK 설치</h1>
+<h2 id="macos">MacOS</h2>
+<ul>
+<li>brew 를 통해 설치한다.</li>
+</ul>
+<pre><code>brew tap AdoptOpenJDK&#x2F;openjdk
+brew install --cask adoptopenjdk8-openj9
+</code></pre>
+<ul>
+<li>
+<p>설치할 버전을 선택할 수 있다.</p>
+<ul>
+<li>https://github.com/AdoptOpenJDK/homebrew-openjdk#available-versions</li>
+</ul>
+</li>
+<li>
+<p><code>Cask adoptopenjdk8 exists in multiple taps</code> 에러가 발생하면 다음과 같이 조치한다.</p>
+<pre><code>rm &#x2F;usr&#x2F;local&#x2F;Homebrew&#x2F;Library&#x2F;Taps&#x2F;homebrew&#x2F;homebrew-cask-versions&#x2F;Casks&#x2F;adoptopenjdk8.rb
+</code></pre>
+<ul>
+<li>https://github.com/AdoptOpenJDK/homebrew-openjdk/issues/106</li>
+</ul>
+</li>
+<li>
+<p>설치되어있는 JDK 리스트 확인</p>
+<pre><code>&#x2F;usr&#x2F;libexec&#x2F;java_home -V
+</code></pre>
+</li>
+<li>
+<p>shell profile 설정</p>
+<pre><code>export JAVA_HOME=`&#x2F;usr&#x2F;libexec&#x2F;java_home -v 1.8.0_292`
+</code></pre>
+</li>
+</ul>
+
+    </div>
+
+    
+    <div class="article-info">
+        
+        <div class="article-date"> 3 March 2022</div>
+        
+        <div class="article-taxonomies">
+            
+            
+                <ul class="article-tags">
+                    
+                    <li><a href="https://jeonconnect.github.io/tags/java/">#java</a></li>
+                    
+                </ul>
+            
+        </div>
+    </div>
+
+</article>
+
+
+        </main>
+        <footer>
+            <p>
+                © jeonconnect 2022
+                <br>
+                Powered by <a target="_blank" href="https://getzola.org/">Zola</a>, Theme <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme">Anpu</a>.
+            </p>
+            <p>
+                
+                
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
