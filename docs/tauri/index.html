@@ -39,23 +39,59 @@
         </header>
         <main id="main" tabindex="-1">
             
-<h1>Tag: #libgdx</h1>
-<div class="article-info">
-    <a href="https://jeonconnect.github.io/tags">To all tags</a>
-</div>
 
+<article class="post">
+    <header>
+        <h1>libgdx</h1>
+    </header>
 
+    <div class="content">
 
-    <article class="post-list">
-        <header> 
-            <h1>
-                <a href="https:&#x2F;&#x2F;jeonconnect.github.io&#x2F;tauri&#x2F;">libgdx</a>
-            </h1>
-        </header>
-
+        <!--
+            목차 표시 추가
+            https://www.getzola.org/documentation/content/table-of-contents/
+        -->
         
+        <ul>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/tauri/#robovm">robovm</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/tauri/#appstore-ddeunrog-hwekeupeulrou">appstore 등록 워크플로우</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+        </ul>
         
-        
+        <!-- 목차 표시 추가 끝 -->
+
+
+        <h1 id="robovm">robovm</h1>
+<h2 id="appstore-ddeunrog-hwekeupeulrou">appstore 등록 워크플로우</h2>
+<ul>
+<li>
+<p>프로젝트의 ios 번들아이디를 동일하게 가지는 앱을 xcode 에서 생성한 후 앱스토어에 최초 한번 등록한다.</p>
+</li>
+<li>
+<p>robovm 으로 생성한 ipa 를 <code>xcrun</code> 을 이용해 업로드한다.</p>
+</li>
+</ul>
+<pre><code>xcrun altool --upload-app --type ios --file &quot;&#x2F;some&#x2F;path&#x2F;app.ipa&quot; --username &quot;apple id&quot; --password &quot;password&quot;
+</code></pre>
+<h3 id="camgo">참고</h3>
+<ul>
+<li>[<a href="https://kjun.kr/986">Xamarin] Application Loader 를 이용하지 않고 ipa 파일 업로드하기 :: kjun.kr (kjcoder.tistory.com)</a></li>
+</ul>
+
+    </div>
+
+    
     <div class="article-info">
         
         <div class="article-date"> 5 February 2022</div>
@@ -72,9 +108,7 @@
         </div>
     </div>
 
-    </article>
-
-
+</article>
 
 
         </main>

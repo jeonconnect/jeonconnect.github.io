@@ -28,7 +28,7 @@
     </url>
     <url>
         <loc>https://jeonconnect.github.io/libgdx/</loc>
-        <lastmod>2022-02-05</lastmod>
+        <lastmod>2022-03-12</lastmod>
     </url>
     <url>
         <loc>https://jeonconnect.github.io/page/1/</loc>
@@ -69,10 +69,17 @@
         <loc>https://jeonconnect.github.io/tags/spring-boot/</loc>
     </url>
     <url>
+        <loc>https://jeonconnect.github.io/tags/tauri/</loc>
+    </url>
+    <url>
         <loc>https://jeonconnect.github.io/tags/webassembly/</loc>
     </url>
     <url>
         <loc>https://jeonconnect.github.io/tags/windows/</loc>
+    </url>
+    <url>
+        <loc>https://jeonconnect.github.io/tauri/</loc>
+        <lastmod>2022-02-05</lastmod>
     </url>
     <url>
         <loc>https://jeonconnect.github.io/webassembly/</loc>
