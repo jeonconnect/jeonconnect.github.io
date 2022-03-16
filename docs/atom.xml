@@ -11,8 +11,8 @@
 		<title>tauri</title>
 		<published>2022-03-12T00:00:00+00:00</published>
 		<updated>2022-03-12T00:00:00+00:00</updated>
-		<link href="https://jeonconnect.github.io/libgdx/" type="text/html"/>
-		<id>https://jeonconnect.github.io/libgdx/</id>
+		<link href="https://jeonconnect.github.io/tauri/" type="text/html"/>
+		<id>https://jeonconnect.github.io/tauri/</id>
 		<content type="html">&lt;h1 id=&quot;peurojjeteu-ssaensseon-totpeulris&quot;&gt;프로젝트 생성 템플릿&lt;&#x2F;h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;n8jadams&#x2F;tauri-typescript-react-boilerplate&quot;&gt;n8jadams&#x2F;tauri-typescript-react-boilerplate: A Tauri Typescript React Boilerplate that works out of the box. (github.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -143,8 +143,8 @@ brew upgrade powershell --cask
 		<title>libgdx</title>
 		<published>2022-02-05T00:00:00+00:00</published>
 		<updated>2022-02-05T00:00:00+00:00</updated>
-		<link href="https://jeonconnect.github.io/tauri/" type="text/html"/>
-		<id>https://jeonconnect.github.io/tauri/</id>
+		<link href="https://jeonconnect.github.io/libgdx/" type="text/html"/>
+		<id>https://jeonconnect.github.io/libgdx/</id>
 		<content type="html">&lt;h1 id=&quot;robovm&quot;&gt;robovm&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;appstore-ddeunrog-hwekeupeulrou&quot;&gt;appstore 등록 워크플로우&lt;&#x2F;h2&gt;
 &lt;ul&gt;
