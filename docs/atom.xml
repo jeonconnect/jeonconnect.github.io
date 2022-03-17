@@ -150,6 +150,17 @@ brew upgrade powershell --cask
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;프로젝트의 ios 번들아이디를 동일하게 가지는 앱을 xcode 에서 생성한 후 앱스토어에 최초 한번 등록한다.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;kbd&gt;Product-Archive&lt;&#x2F;kbd&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;buildDevice 가 시뮬레이터로 되어있으면 메뉴가 비활성화되므로 실제 기기로 설정한다.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;kbd&gt;Distribute App&lt;&#x2F;kbd&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
 &lt;p&gt;robovm 으로 생성한 ipa 를 &lt;code&gt;xcrun&lt;&#x2F;code&gt; 을 이용해 업로드한다.&lt;&#x2F;p&gt;
