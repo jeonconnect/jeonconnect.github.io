@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer-when-downgrade">
 
-    <title>libgdx</title>
+    <title>css</title>
     <meta name="description" content="blog">
 
     <link rel="stylesheet" href="https://jeonconnect.github.io/main.css">
@@ -42,7 +42,7 @@
 
 <article class="post">
     <header>
-        <h1>libgdx</h1>
+        <h1>css</h1>
     </header>
 
     <div class="content">
@@ -55,15 +55,7 @@
         <ul>
             
             <li>
-                <a href="https://jeonconnect.github.io/libgdx/#robovm">robovm</a>
-                
-                <ul>
-                    
-                    <li>
-                        <a href="https://jeonconnect.github.io/libgdx/#appstore-ddeunrog-hwekeupeulrou">appstore 등록 워크플로우</a>
-                    </li>
-                    
-                </ul>
+                <a href="https://jeonconnect.github.io/css/#jjunpan-jjeonryeol">중앙 정렬</a>
                 
             </li>
             
@@ -72,54 +64,26 @@
         <!-- 목차 표시 추가 끝 -->
 
 
-        <h1 id="robovm">robovm</h1>
-<h2 id="appstore-ddeunrog-hwekeupeulrou">appstore 등록 워크플로우</h2>
-<ul>
-<li>
-<p>프로젝트의 ios 번들아이디를 동일하게 가지는 앱을 xcode 에서 생성한 후 앱스토어에 최초 한번 등록한다.</p>
-<ul>
-<li>
-<p><kbd>Product - Archive</kbd></p>
-<ul>
-<li>buildDevice 가 시뮬레이터로 되어있으면 메뉴가 비활성화되므로 실제 기기로 설정한다.</li>
-</ul>
-</li>
-<li>
-<p><kbd>Distribute App</kbd></p>
-</li>
-</ul>
-</li>
-<li>
-<p>제대로 생성한 profile 을 사용한다.</p>
-<ul>
-<li><kbd>developer.apple.com - Certificates, Identifiers &amp; Profiles - Profiles</kbd></li>
-<li>프로파일 추가. Distribution 에서 AppStore 를 선택한다.</li>
-</ul>
-</li>
-<li>
-<p>robovm 으로 생성한 ipa 를 <code>xcrun</code> 을 이용해 업로드한다.</p>
-</li>
-</ul>
-<pre><code>xcrun altool --upload-app --type ios --file &quot;&#x2F;some&#x2F;path&#x2F;app.ipa&quot; --username &quot;apple id&quot; --password &quot;password&quot;
+        <h1 id="jjunpan-jjeonryeol">중앙 정렬</h1>
+<p>바깥 div 의 display 속성을 flex 로 하고, align-items 와 justify-content 를 center 로 지정한다.</p>
+<pre><code>&lt;div style=&quot;display:flex;align-items:center;justify-content:center&quot;&gt;
+	중앙에 정렬됨
+&lt;&#x2F;div&gt;
 </code></pre>
-<h3 id="camgo">참고</h3>
-<ul>
-<li>[<a href="https://kjun.kr/986">Xamarin] Application Loader 를 이용하지 않고 ipa 파일 업로드하기 :: kjun.kr (kjcoder.tistory.com)</a></li>
-</ul>
 
     </div>
 
     
     <div class="article-info">
         
-        <div class="article-date"> 5 February 2022</div>
+        <div class="article-date">18 March 2022</div>
         
         <div class="article-taxonomies">
             
             
                 <ul class="article-tags">
                     
-                    <li><a href="https://jeonconnect.github.io/tags/libgdx/">#libgdx</a></li>
+                    <li><a href="https://jeonconnect.github.io/tags/css/">#css</a></li>
                     
                 </ul>
             
