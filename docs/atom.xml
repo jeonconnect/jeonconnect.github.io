@@ -22,6 +22,22 @@
 </content>
 	</entry>
 	<entry xml:lang="en">
+		<title>vim</title>
+		<published>2022-03-18T00:00:00+00:00</published>
+		<updated>2022-03-18T00:00:00+00:00</updated>
+		<link href="https://jeonconnect.github.io/vim/" type="text/html"/>
+		<id>https://jeonconnect.github.io/vim/</id>
+		<content type="html">&lt;h1 id=&quot;visual-studio-code&quot;&gt;Visual Studio Code&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;teugjjeon-ddacugki-haejehagi&quot;&gt;특정 단축키 해제하기&lt;&#x2F;h2&gt;
+&lt;p&gt;vscode 기능을 덮어쓴 vim 단축키를 비활성화해서 원래의 vscode 기능을 사용하려면&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;kbd&gt; File - Preferences - Keyboard Shorcuts&lt;&#x2F;kbd&gt; 에서 &lt;code&gt;vim&lt;&#x2F;code&gt; 으로 검색해 필터링한 후에 원치않는 vim 키 바인딩을 지워준다.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;camgo&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[&lt;a href=&quot;https:&#x2F;&#x2F;coldmater.tistory.com&#x2F;191&quot;&gt;VSCode][Vim] Visual Studio Code 에 Vim 설치하기, Vim Mode Toggle (tistory.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
 		<title>tauri</title>
 		<published>2022-03-12T00:00:00+00:00</published>
 		<updated>2022-03-12T00:00:00+00:00</updated>
