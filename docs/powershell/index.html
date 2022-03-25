@@ -63,6 +63,10 @@
                         <a href="https://jeonconnect.github.io/powershell/#macosesse-sseocihagi">MacOS에서 설치하기</a>
                     </li>
                     
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#ubuntu-20-04esse-sseocihagi">Ubuntu 20.04에서 설치하기</a>
+                    </li>
+                    
                 </ul>
                 
             </li>
@@ -107,6 +111,26 @@ brew upgrade powershell --cask
 </ul>
 </li>
 </ul>
+<h2 id="ubuntu-20-04esse-sseocihagi">Ubuntu 20.04에서 설치하기</h2>
+<pre><code># Update the list of packages
+sudo apt-get update
+# Install pre-requisite packages.
+sudo apt-get install -y wget apt-transport-https software-properties-common
+# Download the Microsoft repository GPG keys
+wget -q https:&#x2F;&#x2F;packages.microsoft.com&#x2F;config&#x2F;ubuntu&#x2F;20.04&#x2F;packages-microsoft-prod.deb
+# Register the Microsoft repository GPG keys
+sudo dpkg -i packages-microsoft-prod.deb
+# Update the list of packages after we added packages.microsoft.com
+sudo apt-get update
+# Install PowerShell
+sudo apt-get install -y powershell
+# Start PowerShell
+pwsh
+</code></pre>
+<h3 id="camgo-1">참고</h3>
+<ul>
+<li><a href="https://docs.microsoft.com/ko-kr/powershell/scripting/install/install-ubuntu?view=powershell-7.2">Ubuntu에 PowerShell 설치 - PowerShell | Microsoft Docs</a></li>
+</ul>
 <h1 id="pailsissetot">파일시스템</h1>
 <h2 id="ringkeu">링크</h2>
 <p>심볼릭 링크</p>
@@ -115,7 +139,7 @@ brew upgrade powershell --cask
 <p>하드링크</p>
 <pre><code>New-Item -ItemType HardLink -Path &quot;Link&quot; -Target &quot;Target&quot; 
 </code></pre>
-<h3 id="camgo-1">참고</h3>
+<h3 id="camgo-2">참고</h3>
 <ul>
 <li><a href="https://winaero.com/create-symbolic-link-windows-10-powershell/">Create Symbolic Link in Windows 10 with PowerShell (winaero.com)</a></li>
 </ul>
@@ -123,7 +147,7 @@ brew upgrade powershell --cask
 <p>삭제시 <code>-Force</code> 스위치를 붙이지 않으면 권한 문제가 발생하는 경우가 많다.</p>
 <pre><code>Remove-Item &quot;c:\some\path&quot; -Recurse -Force
 </code></pre>
-<h3 id="camgo-2">참고</h3>
+<h3 id="camgo-3">참고</h3>
 <ul>
 <li><a href="https://stackoverflow.com/a/25806947">https://stackoverflow.com/a/25806947</a></li>
 </ul>
