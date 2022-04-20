@@ -5,8 +5,34 @@
 	<link href="https://jeonconnect.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://jeonconnect.github.io"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-03-18T00:00:00+00:00</updated>
+	<updated>2022-04-20T00:00:00+00:00</updated>
 	<id>https://jeonconnect.github.io/atom.xml</id>
+	<entry xml:lang="en">
+		<title>ubuntu 20.04</title>
+		<published>2022-04-20T00:00:00+00:00</published>
+		<updated>2022-04-20T00:00:00+00:00</updated>
+		<link href="https://jeonconnect.github.io/ubuntu-20-04/" type="text/html"/>
+		<id>https://jeonconnect.github.io/ubuntu-20-04/</id>
+		<content type="html">&lt;h1 id=&quot;bbanhwabbyeo&quot;&gt;방화벽&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;ssantae-hwagin&quot;&gt;상태 확인&lt;&#x2F;h2&gt;
+&lt;p&gt;방화벽 활성화 상태를 조회한다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;sudo ufw status
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;ssh-ssebbe&quot;&gt;ssh 서버&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;sseoci&quot;&gt;설치&lt;&#x2F;h2&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt update
+sudo apt install openssh-server
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;방화벽이 활성화되어있다면 ssh 접근을 허용한다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;sudo ufw allow ssh
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;jeeo&quot;&gt;제어&lt;&#x2F;h2&gt;
+&lt;pre&gt;&lt;code&gt;sudo systemctl status ssh
+sudo systemctl enable ssh
+sudo systemctl start ssh
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>css</title>
 		<published>2022-03-18T00:00:00+00:00</published>

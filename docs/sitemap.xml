@@ -64,6 +64,9 @@
         <loc>https://jeonconnect.github.io/tags/libgdx/</loc>
     </url>
     <url>
+        <loc>https://jeonconnect.github.io/tags/linux/</loc>
+    </url>
+    <url>
         <loc>https://jeonconnect.github.io/tags/other/</loc>
     </url>
     <url>
@@ -79,6 +82,9 @@
         <loc>https://jeonconnect.github.io/tags/tauri/</loc>
     </url>
     <url>
+        <loc>https://jeonconnect.github.io/tags/ubuntu/</loc>
+    </url>
+    <url>
         <loc>https://jeonconnect.github.io/tags/vim/</loc>
     </url>
     <url>
@@ -90,6 +96,10 @@
     <url>
         <loc>https://jeonconnect.github.io/tauri/</loc>
         <lastmod>2022-03-12</lastmod>
+    </url>
+    <url>
+        <loc>https://jeonconnect.github.io/ubuntu-20-04/</loc>
+        <lastmod>2022-04-20</lastmod>
     </url>
     <url>
         <loc>https://jeonconnect.github.io/vim/</loc>
