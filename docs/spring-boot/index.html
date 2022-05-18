@@ -105,6 +105,11 @@
                 
             </li>
             
+            <li>
+                <a href="https://jeonconnect.github.io/spring-boot/#logging">Logging</a>
+                
+            </li>
+            
         </ul>
         
         <!-- 목차 표시 추가 끝 -->
@@ -189,6 +194,28 @@ class SomeApplication : CommandLineRunner{
 fun main(args: Array&lt;String&gt;) {
     runApplication&lt;DcWorkerApplication&gt;(*args)
 }
+</code></pre>
+<h1 id="logging">Logging</h1>
+<p>아래와 같이 logger 객체를 생성하고 사용할 수 있다.</p>
+<pre><code>...
+import org.slf4j.LoggerFactory
+...
+
+class SomeClass{
+	private val logger = LoggerFactory.getLogger(javaClass)
+}
+</code></pre>
+<p>application.yml 에 로 관련 설정을 한다.</p>
+<pre><code>logging:
+  file:
+    name: logs&#x2F;some_application.log
+  logback:
+    rollingpolicy:
+      max-file-size: 5MB
+  level:
+    root: error
+    com.some.app: info
+
 </code></pre>
 
     </div>

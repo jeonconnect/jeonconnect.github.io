@@ -482,6 +482,28 @@ fun main(args: Array&amp;lt;String&amp;gt;) {
     runApplication&amp;lt;DcWorkerApplication&amp;gt;(*args)
 }
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;logging&quot;&gt;Logging&lt;&#x2F;h1&gt;
+&lt;p&gt;아래와 같이 logger 객체를 생성하고 사용할 수 있다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;...
+import org.slf4j.LoggerFactory
+...
+
+class SomeClass{
+	private val logger = LoggerFactory.getLogger(javaClass)
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;application.yml 에 로 관련 설정을 한다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;logging:
+  file:
+    name: logs&amp;#x2F;some_application.log
+  logback:
+    rollingpolicy:
+      max-file-size: 5MB
+  level:
+    root: error
+    com.some.app: info
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
 	</entry>
 	<entry xml:lang="en">
