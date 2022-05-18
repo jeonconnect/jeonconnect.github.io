@@ -92,6 +92,19 @@
                 
             </li>
             
+            <li>
+                <a href="https://jeonconnect.github.io/spring-boot/#cli">CLI</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/spring-boot/#cli-eopeulrikeissyeoeuro-sseojjeon">CLI 어플리케이션으로 설정</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
         </ul>
         
         <!-- 목차 표시 추가 끝 -->
@@ -163,6 +176,20 @@ implementation(&quot;com.h2database:h2&quot;)
 <li><a href="https://www.baeldung.com/spring-boot-h2-database">Spring Boot With H2 Database | Baeldung</a></li>
 <li>https://stackoverflow.com/a/47217202</li>
 </ul>
+<h1 id="cli">CLI</h1>
+<h2 id="cli-eopeulrikeissyeoeuro-sseojjeon">CLI 어플리케이션으로 설정</h2>
+<p>어플리케이션이 CommandLineRunner 인터페이스를 구현하도록 한다.</p>
+<pre><code>@SpringBootApplication
+class SomeApplication : CommandLineRunner{
+    override fun run(vararg args: String?) {
+        &#x2F;&#x2F;TODO SOMETHING
+    }
+}
+
+fun main(args: Array&lt;String&gt;) {
+    runApplication&lt;DcWorkerApplication&gt;(*args)
+}
+</code></pre>
 
     </div>
 

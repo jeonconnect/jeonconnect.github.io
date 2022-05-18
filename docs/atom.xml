@@ -468,6 +468,20 @@ implementation(&amp;quot;com.h2database:h2&amp;quot;)
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.baeldung.com&#x2F;spring-boot-h2-database&quot;&gt;Spring Boot With H2 Database | Baeldung&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;47217202&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;cli&quot;&gt;CLI&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;cli-eopeulrikeissyeoeuro-sseojjeon&quot;&gt;CLI 어플리케이션으로 설정&lt;&#x2F;h2&gt;
+&lt;p&gt;어플리케이션이 CommandLineRunner 인터페이스를 구현하도록 한다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;@SpringBootApplication
+class SomeApplication : CommandLineRunner{
+    override fun run(vararg args: String?) {
+        &amp;#x2F;&amp;#x2F;TODO SOMETHING
+    }
+}
+
+fun main(args: Array&amp;lt;String&amp;gt;) {
+    runApplication&amp;lt;DcWorkerApplication&amp;gt;(*args)
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
 	</entry>
 	<entry xml:lang="en">
