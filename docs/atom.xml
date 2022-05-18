@@ -468,6 +468,33 @@ implementation(&amp;quot;com.h2database:h2&amp;quot;)
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.baeldung.com&#x2F;spring-boot-h2-database&quot;&gt;Spring Boot With H2 Database | Baeldung&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;47217202&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;kotlin-sseojjeon&quot;&gt;kotlin 설정&lt;&#x2F;h2&gt;
+&lt;p&gt;build.gradle.kts 에 JPA 사용을 위한 설정을 추가한다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;plugins {
+
+    val kotlinVersion = &amp;quot;1.6.21&amp;quot;
+
+	...중략...
+	
+    kotlin(&amp;quot;plugin.jpa&amp;quot;) version &amp;quot;${kotlinVersion}&amp;quot;
+    kotlin(&amp;quot;plugin.allopen&amp;quot;) version &amp;quot;${kotlinVersion}&amp;quot;
+    kotlin(&amp;quot;plugin.noarg&amp;quot;) version &amp;quot;${kotlinVersion}&amp;quot;
+}
+
+noArg {
+    annotation(&amp;quot;javax.persistence.Entity&amp;quot;)
+}
+
+allOpen {
+    annotation(&amp;quot;javax.persistence.Entity&amp;quot;)
+    annotation(&amp;quot;javax.persistence.MappedSuperclass&amp;quot;)
+    annotation(&amp;quot;javax.persistence.Embeddable&amp;quot;)
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;camgo&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;minkukjo.github.io&#x2F;study&#x2F;docs&#x2F;spring&#x2F;jpa&#x2F;kotlin-jpa-guide&#x2F;&quot;&gt;Kotlin JPA 개발 가이드 | 도전하는 개발자 (minkukjo.github.io)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h1 id=&quot;cli&quot;&gt;CLI&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;cli-eopeulrikeissyeoeuro-sseojjeon&quot;&gt;CLI 어플리케이션으로 설정&lt;&#x2F;h2&gt;
 &lt;p&gt;어플리케이션이 CommandLineRunner 인터페이스를 구현하도록 한다.&lt;&#x2F;p&gt;

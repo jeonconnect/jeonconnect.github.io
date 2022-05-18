@@ -88,6 +88,10 @@
                         <a href="https://jeonconnect.github.io/spring-boot/#h2-database-reul-deiteosossero-sahyon">H2 Database 를 데이터소스로 사용</a>
                     </li>
                     
+                    <li>
+                        <a href="https://jeonconnect.github.io/spring-boot/#kotlin-sseojjeon">kotlin 설정</a>
+                    </li>
+                    
                 </ul>
                 
             </li>
@@ -180,6 +184,33 @@ implementation(&quot;com.h2database:h2&quot;)
 <ul>
 <li><a href="https://www.baeldung.com/spring-boot-h2-database">Spring Boot With H2 Database | Baeldung</a></li>
 <li>https://stackoverflow.com/a/47217202</li>
+</ul>
+<h2 id="kotlin-sseojjeon">kotlin 설정</h2>
+<p>build.gradle.kts 에 JPA 사용을 위한 설정을 추가한다.</p>
+<pre><code>plugins {
+
+    val kotlinVersion = &quot;1.6.21&quot;
+
+	...중략...
+	
+    kotlin(&quot;plugin.jpa&quot;) version &quot;${kotlinVersion}&quot;
+    kotlin(&quot;plugin.allopen&quot;) version &quot;${kotlinVersion}&quot;
+    kotlin(&quot;plugin.noarg&quot;) version &quot;${kotlinVersion}&quot;
+}
+
+noArg {
+    annotation(&quot;javax.persistence.Entity&quot;)
+}
+
+allOpen {
+    annotation(&quot;javax.persistence.Entity&quot;)
+    annotation(&quot;javax.persistence.MappedSuperclass&quot;)
+    annotation(&quot;javax.persistence.Embeddable&quot;)
+}
+</code></pre>
+<h3 id="camgo">참고</h3>
+<ul>
+<li><a href="https://minkukjo.github.io/study/docs/spring/jpa/kotlin-jpa-guide/">Kotlin JPA 개발 가이드 | 도전하는 개발자 (minkukjo.github.io)</a></li>
 </ul>
 <h1 id="cli">CLI</h1>
 <h2 id="cli-eopeulrikeissyeoeuro-sseojjeon">CLI 어플리케이션으로 설정</h2>
