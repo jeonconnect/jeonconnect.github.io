@@ -5,8 +5,32 @@
 	<link href="https://jeonconnect.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://jeonconnect.github.io"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-04-20T00:00:00+00:00</updated>
+	<updated>2022-06-06T00:00:00+00:00</updated>
 	<id>https://jeonconnect.github.io/atom.xml</id>
+	<entry xml:lang="en">
+		<title>rust</title>
+		<published>2022-06-06T00:00:00+00:00</published>
+		<updated>2022-06-06T00:00:00+00:00</updated>
+		<link href="https://jeonconnect.github.io/git/" type="text/html"/>
+		<id>https://jeonconnect.github.io/git/</id>
+		<content type="html">&lt;h1 id=&quot;bbidde&quot;&gt;빌드&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;dependency-ro-git-jjejjanso-jijjeon&quot;&gt;dependency 로 git 저장소 지정&lt;&#x2F;h2&gt;
+&lt;p&gt;~&#x2F;.cargo&#x2F;config 파일에 아래 내용을 추가한다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;[net]
+git-fetch-with-cli = true
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Cargo.toml 에 아래와 같이 의존성 지정한다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;xxx_lib = { git = &amp;quot;ssh:&amp;#x2F;&amp;#x2F;git@xxx.com&amp;#x2F;yyy&amp;#x2F;xxx_lib.git&amp;quot; }
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;아래 명령으로 해당 라이브러리만 다시 갱신할 수 있다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;cargo update -p xxx_lib
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;camgo&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;github.com&#x2F;rust-lang&#x2F;cargo&#x2F;pull&#x2F;5914&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>ubuntu 20.04</title>
 		<published>2022-04-20T00:00:00+00:00</published>
@@ -264,8 +288,8 @@ pwsh
 		<title>git</title>
 		<published>2022-01-30T00:00:00+00:00</published>
 		<updated>2022-01-30T00:00:00+00:00</updated>
-		<link href="https://jeonconnect.github.io/git/" type="text/html"/>
-		<id>https://jeonconnect.github.io/git/</id>
+		<link href="https://jeonconnect.github.io/rust/" type="text/html"/>
+		<id>https://jeonconnect.github.io/rust/</id>
 		<content type="html">&lt;h1 id=&quot;sseojjeon&quot;&gt;설정&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;sseojjeonthanmog-jegge&quot;&gt;설정항목 제거&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;code&gt;--unset&lt;&#x2F;code&gt; 스위치를 사용한다.
@@ -613,8 +637,7 @@ with several lines&lt;&#x2F;p&gt;
 		<link href="https://jeonconnect.github.io/what-is-zola/" type="text/html"/>
 		<id>https://jeonconnect.github.io/what-is-zola/</id>
 		<content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu feugiat sapien. Aenean ligula nunc, laoreet id sem in, interdum bibendum felis. Donec vel dui neque. Praesent ac sem ut justo volutpat rutrum a imperdiet tellus. Nam lobortis massa non hendrerit hendrerit. Vivamus porttitor dignissim turpis, eget aliquam urna tincidunt non. Aliquam et fringilla turpis. Nullam eros est, eleifend in ornare sed, hendrerit eget est. Aliquam tellus felis, suscipit vitae ex vel, fringilla tempus massa. Nulla facilisi. Pellentesque lobortis consequat lectus. Maecenas ac libero elit.&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;&#x2F;h1&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;heading-3&quot;&gt;Heading 3&lt;&#x2F;h3&gt;
 &lt;h4 id=&quot;heading-4&quot;&gt;Heading 4&lt;&#x2F;h4&gt;
