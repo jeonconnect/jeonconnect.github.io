@@ -97,6 +97,10 @@
                         <a href="https://jeonconnect.github.io/powershell/#bbahyeo">배열</a>
                     </li>
                     
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#keulrojje">클로저</a>
+                    </li>
+                    
                 </ul>
                 
             </li>
@@ -170,7 +174,13 @@ pwsh
 <pre><code>$a = 1, 2, 3
 </code></pre>
 <h3 id="bbi-bbahyeo-ssaensseon">빈 배열 생성</h3>
-<pre><code>$a = @()
+<pre data-lang="powershell" class="language-powershell "><code class="language-powershell" data-lang="powershell">$a = @()
+</code></pre>
+<h2 id="keulrojje">클로저</h2>
+<p>스크립트 블럭에서 바깥 스코프의 변수를 참조할 수 있다.</p>
+<pre data-lang="powershell" class="language-powershell "><code class="language-powershell" data-lang="powershell">$a = 1, 2, 3
+$b = { return &quot;a&quot;, &quot;b&quot;, $a[0] }
+&amp; $b #스크립트 블럭 실행
 </code></pre>
 
     </div>

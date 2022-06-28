@@ -77,7 +77,13 @@ pwsh
 &lt;pre&gt;&lt;code&gt;$a = 1, 2, 3
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h3 id=&quot;bbi-bbahyeo-ssaensseon&quot;&gt;빈 배열 생성&lt;&#x2F;h3&gt;
-&lt;pre&gt;&lt;code&gt;$a = @()
+&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;$a = @()
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;keulrojje&quot;&gt;클로저&lt;&#x2F;h2&gt;
+&lt;p&gt;스크립트 블럭에서 바깥 스코프의 변수를 참조할 수 있다.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;$a = 1, 2, 3
+$b = { return &amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, $a[0] }
+&amp;amp; $b #스크립트 블럭 실행
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
 	</entry>
