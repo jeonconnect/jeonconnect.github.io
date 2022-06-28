@@ -92,6 +92,12 @@ pwsh
 $b = { return &amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, $a[0] }
 &amp;amp; $b #스크립트 블럭 실행
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;moddyu&quot;&gt;모듈&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;psfzf&quot;&gt;PSFzf&lt;&#x2F;h2&gt;
+&lt;p&gt;fzf 기능 통합&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kelleyma49&#x2F;PSFzf&quot;&gt;kelleyma49&#x2F;PSFzf: A PowerShell wrapper around the fuzzy finder fzf (github.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 	<entry xml:lang="en">
