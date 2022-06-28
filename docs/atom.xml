@@ -80,6 +80,9 @@ pwsh
 &lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;$a = @()
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h2 id=&quot;haesiteibbeu&quot;&gt;해시테이블&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;ssaensseon-1&quot;&gt;생성&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code&gt;$a = @{a=1;b=2}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h3 id=&quot;bbi-haesiteibbeu-ssaensseon&quot;&gt;빈 해시테이블 생성&lt;&#x2F;h3&gt;
 &lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;$a = @{}
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
