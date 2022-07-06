@@ -150,8 +150,29 @@
 <h2 id="pid-pail-jaddon-ssaensseon">pid 파일 자동 생성</h2>
 <p><code>spring.pid.file</code> 설정을 지정하면 해당 경로 파일에 실행된 프로세스의 pid 를 저장한다.</p>
 <p><code>ApplicationPidFileWriter</code> 를 어플리케이션 리스너로 등록해줘야 한다.</p>
+<pre><code>@SpringBootApplication
+class SomeApplication
+
+fun main(args: Array&lt;String&gt;) {
+    SpringApplication(SomeApplication::class.java)
+        .apply {
+            addListeners(ApplicationPidFileWriter())
+        }
+        .run(*args)
+}
+</code></pre>
+<p>pid 파일 생성 경로를 설정할 수 있다.</p>
+<pre><code>spring:
+  pid:
+    file: &#x2F;xxx&#x2F;yyy&#x2F;zzz.pid
+</code></pre>
 <ul>
-<li><a href="https://toshi15shkim.github.io/articles/2019-09/spring-boot-pid">Boot로 실행시 pid 자동 생성 방법 | Toshi의 개발 블로그 (toshi15shkim.github.io)</a></li>
+<li>
+<p><a href="https://toshi15shkim.github.io/articles/2019-09/spring-boot-pid">Boot로 실행시 pid 자동 생성 방법 | Toshi의 개발 블로그 (toshi15shkim.github.io)</a></p>
+</li>
+<li>
+<p><a href="https://jheloper.github.io/2019/05/spring-boot-pid-file/">스프링 부트 PID(Process Identifier) 파일 생성 방법 (jheloper.github.io)</a></p>
+</li>
 </ul>
 <h2 id="spring-boot-haeheu-ssebissero-ddeunrog">spring boot 앱을 서비스로 등록</h2>
 <ul>
@@ -254,7 +275,7 @@ class SomeClass{
     
     <div class="article-info">
         
-        <div class="article-date">25 November 2021</div>
+        <div class="article-date"> 6 July 2022</div>
         
         <div class="article-taxonomies">
             
