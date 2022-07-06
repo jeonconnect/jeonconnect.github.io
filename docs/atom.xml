@@ -86,11 +86,28 @@ pwsh
 &lt;h3 id=&quot;bbi-haesiteibbeu-ssaensseon&quot;&gt;빈 해시테이블 생성&lt;&#x2F;h3&gt;
 &lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;$a = @{}
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;munjahyeo&quot;&gt;문자열&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;issekeipeu&quot;&gt;이스케이프&lt;&#x2F;h3&gt;
+&lt;p&gt;이스케이프를 위해 &lt;kbd&gt;`&lt;&#x2F;kbd&gt; 를 사용한다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;$foo = @&amp;quot;
+a
+b
+c
+&amp;quot;@.Replace(&amp;quot;`r`n&amp;quot;,&amp;quot;&amp;quot;).Replace(&amp;#x27;a&amp;#x27;,&amp;#x27;&amp;#x27;)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h2 id=&quot;keulrojje&quot;&gt;클로저&lt;&#x2F;h2&gt;
 &lt;p&gt;스크립트 블럭에서 바깥 스코프의 변수를 참조할 수 있다.&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;$a = 1, 2, 3
 $b = { return &amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, $a[0] }
 &amp;amp; $b #스크립트 블럭 실행
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;hweoggyeo&quot;&gt;원격&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;ssh&quot;&gt;ssh&lt;&#x2F;h2&gt;
+&lt;p&gt;아래와 같은 방식으로 원격지의 ssh 서버에 대해서 여러 명령을 실행시킬 수 있다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;ssh -tt username@some.server.com @&amp;quot;
+pwd
+sudo ls &amp;#x2F;etc
+&amp;quot;@.replace(&amp;quot;`r&amp;quot;,&amp;quot;&amp;quot;)
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h1 id=&quot;moddyu&quot;&gt;모듈&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;psfzf&quot;&gt;PSFzf&lt;&#x2F;h2&gt;

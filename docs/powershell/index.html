@@ -102,7 +102,24 @@
                     </li>
                     
                     <li>
+                        <a href="https://jeonconnect.github.io/powershell/#munjahyeo">문자열</a>
+                    </li>
+                    
+                    <li>
                         <a href="https://jeonconnect.github.io/powershell/#keulrojje">클로저</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/powershell/#hweoggyeo">원격</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#ssh">ssh</a>
                     </li>
                     
                 </ul>
@@ -200,11 +217,28 @@ pwsh
 <h3 id="bbi-haesiteibbeu-ssaensseon">빈 해시테이블 생성</h3>
 <pre data-lang="powershell" class="language-powershell "><code class="language-powershell" data-lang="powershell">$a = @{}
 </code></pre>
+<h2 id="munjahyeo">문자열</h2>
+<h3 id="issekeipeu">이스케이프</h3>
+<p>이스케이프를 위해 <kbd>`</kbd> 를 사용한다.</p>
+<pre><code>$foo = @&quot;
+a
+b
+c
+&quot;@.Replace(&quot;`r`n&quot;,&quot;&quot;).Replace(&#x27;a&#x27;,&#x27;&#x27;)
+</code></pre>
 <h2 id="keulrojje">클로저</h2>
 <p>스크립트 블럭에서 바깥 스코프의 변수를 참조할 수 있다.</p>
 <pre data-lang="powershell" class="language-powershell "><code class="language-powershell" data-lang="powershell">$a = 1, 2, 3
 $b = { return &quot;a&quot;, &quot;b&quot;, $a[0] }
 &amp; $b #스크립트 블럭 실행
+</code></pre>
+<h1 id="hweoggyeo">원격</h1>
+<h2 id="ssh">ssh</h2>
+<p>아래와 같은 방식으로 원격지의 ssh 서버에 대해서 여러 명령을 실행시킬 수 있다.</p>
+<pre><code>ssh -tt username@some.server.com @&quot;
+pwd
+sudo ls &#x2F;etc
+&quot;@.replace(&quot;`r&quot;,&quot;&quot;)
 </code></pre>
 <h1 id="moddyu">모듈</h1>
 <h2 id="psfzf">PSFzf</h2>
