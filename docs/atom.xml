@@ -5,12 +5,12 @@
 	<link href="https://jeonconnect.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://jeonconnect.github.io"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-07T00:00:00+00:00</updated>
+	<updated>2022-07-08T00:00:00+00:00</updated>
 	<id>https://jeonconnect.github.io/atom.xml</id>
 	<entry xml:lang="en">
 		<title>spring boot</title>
-		<published>2022-07-07T00:00:00+00:00</published>
-		<updated>2022-07-07T00:00:00+00:00</updated>
+		<published>2022-07-08T00:00:00+00:00</published>
+		<updated>2022-07-08T00:00:00+00:00</updated>
 		<link href="https://jeonconnect.github.io/spring-boot/" type="text/html"/>
 		<id>https://jeonconnect.github.io/spring-boot/</id>
 		<content type="html">&lt;h1 id=&quot;sseojjeon&quot;&gt;설정&lt;&#x2F;h1&gt;
