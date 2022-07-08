@@ -31,8 +31,14 @@
   level:
     root: ${LOGGING_LEVEL_ROOT:info}
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;사용자의 홈 디렉토리는 &lt;code&gt;${user.home}&lt;&#x2F;code&gt; 으로 참조할 수 있다.&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;23027315&#x2F;does-application-yml-support-environment-variables&quot;&gt;java - Does application.yml support environment variables? - Stack Overflow&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;23027315&#x2F;does-application-yml-support-environment-variables&quot;&gt;java - Does application.yml support environment variables? - Stack Overflow&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;61372261&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h1 id=&quot;deploy&quot;&gt;deploy&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;nginx-hyeoddon&quot;&gt;nginx 연동&lt;&#x2F;h2&gt;
