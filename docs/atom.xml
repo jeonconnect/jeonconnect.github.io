@@ -123,13 +123,28 @@ sudo ls &amp;#x2F;etc
 		<updated>2022-07-06T00:00:00+00:00</updated>
 		<link href="https://jeonconnect.github.io/spring-boot/" type="text/html"/>
 		<id>https://jeonconnect.github.io/spring-boot/</id>
-		<content type="html">&lt;h1 id=&quot;deploy&quot;&gt;deploy&lt;&#x2F;h1&gt;
+		<content type="html">&lt;h1 id=&quot;sseojjeon&quot;&gt;설정&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;spring-boot-jar-bbaposie-application-yml-bbaci&quot;&gt;spring boot jar 배포시에 application.yml 배치&lt;&#x2F;h2&gt;
 &lt;p&gt;현재 실행 디렉토리의 config 서브 디렉토리 또는 현재 실행 디렉토리 등에 application.yml 을 배치하면, jar 에 포함된 application.yml 의 설정을 override 한다.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;[&lt;a href=&quot;https:&#x2F;&#x2F;www.latera.kr&#x2F;reference&#x2F;java&#x2F;2019-09-29-spring-boot-config-externalize&#x2F;&quot;&gt;Spring Boot] 외부에서 설정 주입하기 - Increment (latera.kr)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;theuphill.tistory.com&#x2F;12&quot;&gt;완전히 실행 가능한 Spring Boot 배포 (tistory.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;application-yml-esse-hwanggyeonbbyeosu-sahyon&quot;&gt;application.yml 에서 환경변수 사용&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;code&gt;${변수명}&lt;&#x2F;code&gt; 형식을 사용해 환경변수가 가진 값으로 대치되도록 지정할 수 있다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;server:
+  address: ${SERVER_IP}
+  port: ${SERVER_PORT}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;환경변수가 존재하지 않을 때의 기본사용값을 지정할 수도 있다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;logging:
+  level:
+    root: ${LOGGING_LEVEL_ROOT:info}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;23027315&#x2F;does-application-yml-support-environment-variables&quot;&gt;java - Does application.yml support environment variables? - Stack Overflow&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;deploy&quot;&gt;deploy&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;nginx-hyeoddon&quot;&gt;nginx 연동&lt;&#x2F;h2&gt;
 &lt;p&gt;특정 경로를 WAS 로 리다이렉트한다.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;code&gt;&#x2F;etc&#x2F;nginx&#x2F;sites-available&#x2F;xxxxxx.com&lt;&#x2F;code&gt;  설정에 추가한다.&lt;&#x2F;p&gt;

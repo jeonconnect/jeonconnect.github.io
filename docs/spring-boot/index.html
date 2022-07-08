@@ -55,13 +55,26 @@
         <ul>
             
             <li>
-                <a href="https://jeonconnect.github.io/spring-boot/#deploy">deploy</a>
+                <a href="https://jeonconnect.github.io/spring-boot/#sseojjeon">설정</a>
                 
                 <ul>
                     
                     <li>
                         <a href="https://jeonconnect.github.io/spring-boot/#spring-boot-jar-bbaposie-application-yml-bbaci">spring boot jar 배포시에 application.yml 배치</a>
                     </li>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/spring-boot/#application-yml-esse-hwanggyeonbbyeosu-sahyon">application.yml 에서 환경변수 사용</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/spring-boot/#deploy">deploy</a>
+                
+                <ul>
                     
                     <li>
                         <a href="https://jeonconnect.github.io/spring-boot/#nginx-hyeoddon">nginx 연동</a>
@@ -119,13 +132,28 @@
         <!-- 목차 표시 추가 끝 -->
 
 
-        <h1 id="deploy">deploy</h1>
+        <h1 id="sseojjeon">설정</h1>
 <h2 id="spring-boot-jar-bbaposie-application-yml-bbaci">spring boot jar 배포시에 application.yml 배치</h2>
 <p>현재 실행 디렉토리의 config 서브 디렉토리 또는 현재 실행 디렉토리 등에 application.yml 을 배치하면, jar 에 포함된 application.yml 의 설정을 override 한다.</p>
 <ul>
 <li>[<a href="https://www.latera.kr/reference/java/2019-09-29-spring-boot-config-externalize/">Spring Boot] 외부에서 설정 주입하기 - Increment (latera.kr)</a></li>
 <li><a href="https://theuphill.tistory.com/12">완전히 실행 가능한 Spring Boot 배포 (tistory.com)</a></li>
 </ul>
+<h2 id="application-yml-esse-hwanggyeonbbyeosu-sahyon">application.yml 에서 환경변수 사용</h2>
+<p><code>${변수명}</code> 형식을 사용해 환경변수가 가진 값으로 대치되도록 지정할 수 있다.</p>
+<pre><code>server:
+  address: ${SERVER_IP}
+  port: ${SERVER_PORT}
+</code></pre>
+<p>환경변수가 존재하지 않을 때의 기본사용값을 지정할 수도 있다.</p>
+<pre><code>logging:
+  level:
+    root: ${LOGGING_LEVEL_ROOT:info}
+</code></pre>
+<ul>
+<li><a href="https://stackoverflow.com/questions/23027315/does-application-yml-support-environment-variables">java - Does application.yml support environment variables? - Stack Overflow</a></li>
+</ul>
+<h1 id="deploy">deploy</h1>
 <h2 id="nginx-hyeoddon">nginx 연동</h2>
 <p>특정 경로를 WAS 로 리다이렉트한다.</p>
 <p><code>/etc/nginx/sites-available/xxxxxx.com</code>  설정에 추가한다.</p>
