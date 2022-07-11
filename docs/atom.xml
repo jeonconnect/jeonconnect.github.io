@@ -5,8 +5,122 @@
 	<link href="https://jeonconnect.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://jeonconnect.github.io"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-08T00:00:00+00:00</updated>
+	<updated>2022-07-12T00:00:00+00:00</updated>
 	<id>https://jeonconnect.github.io/atom.xml</id>
+	<entry xml:lang="en">
+		<title>powershell</title>
+		<published>2022-07-12T00:00:00+00:00</published>
+		<updated>2022-07-12T00:00:00+00:00</updated>
+		<link href="https://jeonconnect.github.io/powershell/" type="text/html"/>
+		<id>https://jeonconnect.github.io/powershell/</id>
+		<content type="html">&lt;h1 id=&quot;sseoci&quot;&gt;설치&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;macosesse-sseocihagi&quot;&gt;MacOS에서 설치하기&lt;&#x2F;h2&gt;
+&lt;p&gt;설치&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;brew install --cask powershell
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;업그레이드&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;brew update
+brew upgrade powershell --cask
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;camgo&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;docs.microsoft.com&#x2F;ko-kr&#x2F;powershell&#x2F;scripting&#x2F;install&#x2F;installing-powershell-on-macos?view=powershell-7.2&lt;&#x2F;li&gt;
+&lt;li&gt;https:&#x2F;&#x2F;zigford.org&#x2F;setting-powershell-as-default-on-macos.htmls
+&lt;ul&gt;
+&lt;li&gt;기본 쉘로 설정&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ubuntu-20-04esse-sseocihagi&quot;&gt;Ubuntu 20.04에서 설치하기&lt;&#x2F;h2&gt;
+&lt;pre&gt;&lt;code&gt;# Update the list of packages
+sudo apt-get update
+# Install pre-requisite packages.
+sudo apt-get install -y wget apt-transport-https software-properties-common
+# Download the Microsoft repository GPG keys
+wget -q https:&amp;#x2F;&amp;#x2F;packages.microsoft.com&amp;#x2F;config&amp;#x2F;ubuntu&amp;#x2F;20.04&amp;#x2F;packages-microsoft-prod.deb
+# Register the Microsoft repository GPG keys
+sudo dpkg -i packages-microsoft-prod.deb
+# Update the list of packages after we added packages.microsoft.com
+sudo apt-get update
+# Install PowerShell
+sudo apt-get install -y powershell
+# Start PowerShell
+pwsh
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;camgo-1&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.microsoft.com&#x2F;ko-kr&#x2F;powershell&#x2F;scripting&#x2F;install&#x2F;install-ubuntu?view=powershell-7.2&quot;&gt;Ubuntu에 PowerShell 설치 - PowerShell | Microsoft Docs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;pailsissetot&quot;&gt;파일시스템&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;ringkeu&quot;&gt;링크&lt;&#x2F;h2&gt;
+&lt;p&gt;심볼릭 링크&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;New-Item -ItemType SymbolicLink -Path &amp;quot;Link&amp;quot; -Target &amp;quot;Target&amp;quot;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;하드링크&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;New-Item -ItemType HardLink -Path &amp;quot;Link&amp;quot; -Target &amp;quot;Target&amp;quot; 
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;camgo-2&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;winaero.com&#x2F;create-symbolic-link-windows-10-powershell&#x2F;&quot;&gt;Create Symbolic Link in Windows 10 with PowerShell (winaero.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ssaje&quot;&gt;삭제&lt;&#x2F;h2&gt;
+&lt;p&gt;삭제시 &lt;code&gt;-Force&lt;&#x2F;code&gt; 스위치를 붙이지 않으면 권한 문제가 발생하는 경우가 많다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;Remove-Item &amp;quot;c:\some\path&amp;quot; -Recurse -Force
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;camgo-3&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;25806947&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;25806947&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;gibbomunbbeosathan&quot;&gt;기본문법사항&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;jaddonbbyeosu&quot;&gt;자동변수&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.microsoft.com&#x2F;ko-kr&#x2F;powershell&#x2F;module&#x2F;microsoft.powershell.core&#x2F;about&#x2F;about_automatic_variables?view=powershell-7.2&amp;amp;viewFallbackFrom=powershell-7.4&quot;&gt;자동 변수 정보 - PowerShell | Microsoft Docs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;bbahyeo&quot;&gt;배열&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;ssaensseon&quot;&gt;생성&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code&gt;$a = 1, 2, 3
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;bbi-bbahyeo-ssaensseon&quot;&gt;빈 배열 생성&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;$a = @()
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;haesiteibbeu&quot;&gt;해시테이블&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;ssaensseon-1&quot;&gt;생성&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code&gt;$a = @{a=1;b=2}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;bbi-haesiteibbeu-ssaensseon&quot;&gt;빈 해시테이블 생성&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;$a = @{}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;munjahyeo&quot;&gt;문자열&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;issekeipeu&quot;&gt;이스케이프&lt;&#x2F;h3&gt;
+&lt;p&gt;이스케이프를 위해 &lt;kbd&gt;`&lt;&#x2F;kbd&gt; 를 사용한다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;$foo = @&amp;quot;
+a
+b
+c
+&amp;quot;@.Replace(&amp;quot;`r`n&amp;quot;,&amp;quot;&amp;quot;).Replace(&amp;#x27;a&amp;#x27;,&amp;#x27;&amp;#x27;)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;keulrojje&quot;&gt;클로저&lt;&#x2F;h2&gt;
+&lt;p&gt;스크립트 블럭에서 바깥 스코프의 변수를 참조할 수 있다.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;$a = 1, 2, 3
+$b = { return &amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, $a[0] }
+&amp;amp; $b #스크립트 블럭 실행
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;hweoggyeo&quot;&gt;원격&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;ssh&quot;&gt;ssh&lt;&#x2F;h2&gt;
+&lt;p&gt;아래와 같은 방식으로 원격지의 ssh 서버에 대해서 여러 명령을 실행시킬 수 있다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;ssh -tt username@some.server.com @&amp;quot;
+pwd
+sudo ls &amp;#x2F;etc
+&amp;quot;@.replace(&amp;quot;`r&amp;quot;,&amp;quot;&amp;quot;)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;moddyu&quot;&gt;모듈&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;psfzf&quot;&gt;PSFzf&lt;&#x2F;h2&gt;
+&lt;p&gt;fzf 기능 통합&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kelleyma49&#x2F;PSFzf&quot;&gt;kelleyma49&#x2F;PSFzf: A PowerShell wrapper around the fuzzy finder fzf (github.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>spring boot</title>
 		<published>2022-07-08T00:00:00+00:00</published>
@@ -184,116 +298,6 @@ class SomeClass{
     com.some.app: info
 
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-</content>
-	</entry>
-	<entry xml:lang="en">
-		<title>powershell</title>
-		<published>2022-07-06T00:00:00+00:00</published>
-		<updated>2022-07-06T00:00:00+00:00</updated>
-		<link href="https://jeonconnect.github.io/powershell/" type="text/html"/>
-		<id>https://jeonconnect.github.io/powershell/</id>
-		<content type="html">&lt;h1 id=&quot;sseoci&quot;&gt;설치&lt;&#x2F;h1&gt;
-&lt;h2 id=&quot;macosesse-sseocihagi&quot;&gt;MacOS에서 설치하기&lt;&#x2F;h2&gt;
-&lt;p&gt;설치&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;brew install --cask powershell
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;업그레이드&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;brew update
-brew upgrade powershell --cask
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;camgo&quot;&gt;참고&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;https:&#x2F;&#x2F;docs.microsoft.com&#x2F;ko-kr&#x2F;powershell&#x2F;scripting&#x2F;install&#x2F;installing-powershell-on-macos?view=powershell-7.2&lt;&#x2F;li&gt;
-&lt;li&gt;https:&#x2F;&#x2F;zigford.org&#x2F;setting-powershell-as-default-on-macos.htmls
-&lt;ul&gt;
-&lt;li&gt;기본 쉘로 설정&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;ubuntu-20-04esse-sseocihagi&quot;&gt;Ubuntu 20.04에서 설치하기&lt;&#x2F;h2&gt;
-&lt;pre&gt;&lt;code&gt;# Update the list of packages
-sudo apt-get update
-# Install pre-requisite packages.
-sudo apt-get install -y wget apt-transport-https software-properties-common
-# Download the Microsoft repository GPG keys
-wget -q https:&amp;#x2F;&amp;#x2F;packages.microsoft.com&amp;#x2F;config&amp;#x2F;ubuntu&amp;#x2F;20.04&amp;#x2F;packages-microsoft-prod.deb
-# Register the Microsoft repository GPG keys
-sudo dpkg -i packages-microsoft-prod.deb
-# Update the list of packages after we added packages.microsoft.com
-sudo apt-get update
-# Install PowerShell
-sudo apt-get install -y powershell
-# Start PowerShell
-pwsh
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;camgo-1&quot;&gt;참고&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.microsoft.com&#x2F;ko-kr&#x2F;powershell&#x2F;scripting&#x2F;install&#x2F;install-ubuntu?view=powershell-7.2&quot;&gt;Ubuntu에 PowerShell 설치 - PowerShell | Microsoft Docs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h1 id=&quot;pailsissetot&quot;&gt;파일시스템&lt;&#x2F;h1&gt;
-&lt;h2 id=&quot;ringkeu&quot;&gt;링크&lt;&#x2F;h2&gt;
-&lt;p&gt;심볼릭 링크&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;New-Item -ItemType SymbolicLink -Path &amp;quot;Link&amp;quot; -Target &amp;quot;Target&amp;quot;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;하드링크&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;New-Item -ItemType HardLink -Path &amp;quot;Link&amp;quot; -Target &amp;quot;Target&amp;quot; 
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;camgo-2&quot;&gt;참고&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;winaero.com&#x2F;create-symbolic-link-windows-10-powershell&#x2F;&quot;&gt;Create Symbolic Link in Windows 10 with PowerShell (winaero.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;ssaje&quot;&gt;삭제&lt;&#x2F;h2&gt;
-&lt;p&gt;삭제시 &lt;code&gt;-Force&lt;&#x2F;code&gt; 스위치를 붙이지 않으면 권한 문제가 발생하는 경우가 많다.&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;Remove-Item &amp;quot;c:\some\path&amp;quot; -Recurse -Force
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;camgo-3&quot;&gt;참고&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;25806947&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;25806947&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h1 id=&quot;gibbomunbbeosathan&quot;&gt;기본문법사항&lt;&#x2F;h1&gt;
-&lt;h2 id=&quot;bbahyeo&quot;&gt;배열&lt;&#x2F;h2&gt;
-&lt;h3 id=&quot;ssaensseon&quot;&gt;생성&lt;&#x2F;h3&gt;
-&lt;pre&gt;&lt;code&gt;$a = 1, 2, 3
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;bbi-bbahyeo-ssaensseon&quot;&gt;빈 배열 생성&lt;&#x2F;h3&gt;
-&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;$a = @()
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;haesiteibbeu&quot;&gt;해시테이블&lt;&#x2F;h2&gt;
-&lt;h3 id=&quot;ssaensseon-1&quot;&gt;생성&lt;&#x2F;h3&gt;
-&lt;pre&gt;&lt;code&gt;$a = @{a=1;b=2}
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;bbi-haesiteibbeu-ssaensseon&quot;&gt;빈 해시테이블 생성&lt;&#x2F;h3&gt;
-&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;$a = @{}
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;munjahyeo&quot;&gt;문자열&lt;&#x2F;h2&gt;
-&lt;h3 id=&quot;issekeipeu&quot;&gt;이스케이프&lt;&#x2F;h3&gt;
-&lt;p&gt;이스케이프를 위해 &lt;kbd&gt;`&lt;&#x2F;kbd&gt; 를 사용한다.&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;$foo = @&amp;quot;
-a
-b
-c
-&amp;quot;@.Replace(&amp;quot;`r`n&amp;quot;,&amp;quot;&amp;quot;).Replace(&amp;#x27;a&amp;#x27;,&amp;#x27;&amp;#x27;)
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;keulrojje&quot;&gt;클로저&lt;&#x2F;h2&gt;
-&lt;p&gt;스크립트 블럭에서 바깥 스코프의 변수를 참조할 수 있다.&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;$a = 1, 2, 3
-$b = { return &amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, $a[0] }
-&amp;amp; $b #스크립트 블럭 실행
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h1 id=&quot;hweoggyeo&quot;&gt;원격&lt;&#x2F;h1&gt;
-&lt;h2 id=&quot;ssh&quot;&gt;ssh&lt;&#x2F;h2&gt;
-&lt;p&gt;아래와 같은 방식으로 원격지의 ssh 서버에 대해서 여러 명령을 실행시킬 수 있다.&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;ssh -tt username@some.server.com @&amp;quot;
-pwd
-sudo ls &amp;#x2F;etc
-&amp;quot;@.replace(&amp;quot;`r&amp;quot;,&amp;quot;&amp;quot;)
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h1 id=&quot;moddyu&quot;&gt;모듈&lt;&#x2F;h1&gt;
-&lt;h2 id=&quot;psfzf&quot;&gt;PSFzf&lt;&#x2F;h2&gt;
-&lt;p&gt;fzf 기능 통합&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kelleyma49&#x2F;PSFzf&quot;&gt;kelleyma49&#x2F;PSFzf: A PowerShell wrapper around the fuzzy finder fzf (github.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 	<entry xml:lang="en">
