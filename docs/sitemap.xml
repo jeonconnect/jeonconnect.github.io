@@ -27,6 +27,10 @@
         <lastmod>2022-06-06</lastmod>
     </url>
     <url>
+        <loc>https://jeonconnect.github.io/gradle/</loc>
+        <lastmod>2022-07-22</lastmod>
+    </url>
+    <url>
         <loc>https://jeonconnect.github.io/java/</loc>
         <lastmod>2022-03-03</lastmod>
     </url>
@@ -60,6 +64,9 @@
     </url>
     <url>
         <loc>https://jeonconnect.github.io/tags/git/</loc>
+    </url>
+    <url>
+        <loc>https://jeonconnect.github.io/tags/gradle/</loc>
     </url>
     <url>
         <loc>https://jeonconnect.github.io/tags/java/</loc>

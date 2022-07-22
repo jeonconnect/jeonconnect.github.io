@@ -5,8 +5,30 @@
 	<link href="https://jeonconnect.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://jeonconnect.github.io"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-12T00:00:00+00:00</updated>
+	<updated>2022-07-22T00:00:00+00:00</updated>
 	<id>https://jeonconnect.github.io/atom.xml</id>
+	<entry xml:lang="en">
+		<title>gradle</title>
+		<published>2022-07-22T00:00:00+00:00</published>
+		<updated>2022-07-22T00:00:00+00:00</updated>
+		<link href="https://jeonconnect.github.io/gradle/" type="text/html"/>
+		<id>https://jeonconnect.github.io/gradle/</id>
+		<content type="html">&lt;h1 id=&quot;java-keompail-inkowedd-jijjeon&quot;&gt;java 컴파일 인코딩 지정&lt;&#x2F;h1&gt;
+&lt;p&gt;아래와 같은 형식으로 인코딩을 명시한다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;tasks {
+    javadoc {
+        options.encoding = &amp;quot;UTF-8&amp;quot;
+    }
+    compileJava {
+        options.encoding = &amp;quot;UTF-8&amp;quot;
+    }
+    compileTestJava {
+        options.encoding = &amp;quot;UTF-8&amp;quot;
+    }
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>powershell</title>
 		<published>2022-07-12T00:00:00+00:00</published>
