@@ -5,8 +5,22 @@
 	<link href="https://jeonconnect.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://jeonconnect.github.io"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-22T00:00:00+00:00</updated>
+	<updated>2022-07-26T00:00:00+00:00</updated>
 	<id>https://jeonconnect.github.io/atom.xml</id>
+	<entry xml:lang="en">
+		<title>autohotkey</title>
+		<published>2022-07-26T00:00:00+00:00</published>
+		<updated>2022-07-26T00:00:00+00:00</updated>
+		<link href="https://jeonconnect.github.io/autohotkey/" type="text/html"/>
+		<id>https://jeonconnect.github.io/autohotkey/</id>
+		<content type="html">&lt;h1 id=&quot;jaddonssihaeng-ddeunrog&quot;&gt;자동실행 등록&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;kbd&gt;Ctrl+R&lt;&#x2F;kbd&gt; 로 &lt;code&gt;shell:startup&lt;&#x2F;code&gt; 실행해서 열리는 폴더에 자동실행할 실행파일의 바로가기를 만들어 놓는다.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;camgo&quot;&gt;참고&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tricks-office.com&#x2F;autohotkey&#x2F;&quot;&gt;오토핫키 (AutoHotkey) 사용하기 - 업무의 잔머리 (tricks-office.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>gradle</title>
 		<published>2022-07-22T00:00:00+00:00</published>
