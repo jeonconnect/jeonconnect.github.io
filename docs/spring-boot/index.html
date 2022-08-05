@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <title>spring boot</title>
+    <meta name="description" content="blog">
+
+    <link rel="stylesheet" href="https://jeonconnect.github.io/main.css">
+
+    
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://jeonconnect.github.io/atom.xml">
+    
+
+    
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to content</a>
+    <div class="container">
+        <header> 
+            <h1 class="site-header">
+                <a href="https:&#x2F;&#x2F;jeonconnect.github.io">jeonconnect</a>
+            </h1>
+            <nav>
+                
+                
+                
+                <a  href="https:&#x2F;&#x2F;jeonconnect.github.io&#x2F;about&#x2F;">About</a>
+                
+                
+                <a  href="https:&#x2F;&#x2F;jeonconnect.github.io&#x2F;tags&#x2F;">Tags</a>
+                
+                
+            </nav>
+        </header>
+        <main id="main" tabindex="-1">
+            
+
+<article class="post">
+    <header>
+        <h1>spring boot</h1>
+    </header>
+
+    <div class="content">
+
+        <!--
+            목차 표시 추가
+            https://www.getzola.org/documentation/content/table-of-contents/
+        -->
+        
+        <ul>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/spring-boot/#sseojjeon">설정</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/spring-boot/#spring-boot-jar-bbaposie-application-yml-bbaci">spring boot jar 배포시에 application.yml 배치</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/spring-boot/#application-yml-esse-hwanggyeonbbyeosu-sahyon">application.yml 에서 환경변수 사용</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/spring-boot/#deploy">deploy</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/spring-boot/#nginx-hyeoddon">nginx 연동</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/spring-boot/#pid-pail-jaddon-ssaensseon">pid 파일 자동 생성</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/spring-boot/#spring-boot-haeheu-ssebissero-ddeunrog">spring boot 앱을 서비스로 등록</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/spring-boot/#jpa">JPA</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/spring-boot/#h2-database-reul-deiteosossero-sahyon">H2 Database 를 데이터소스로 사용</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/spring-boot/#kotlin-sseojjeon">kotlin 설정</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/spring-boot/#cli">CLI</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/spring-boot/#cli-eopeulrikeissyeoeuro-sseojjeon">CLI 어플리케이션으로 설정</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/spring-boot/#logging">Logging</a>
+                
+            </li>
+            
+        </ul>
+        
+        <!-- 목차 표시 추가 끝 -->
+
+
+        <h1 id="sseojjeon">설정</h1>
+<h2 id="spring-boot-jar-bbaposie-application-yml-bbaci">spring boot jar 배포시에 application.yml 배치</h2>
+<p>현재 실행 디렉토리의 config 서브 디렉토리 또는 현재 실행 디렉토리 등에 application.yml 을 배치하면, jar 에 포함된 application.yml 의 설정을 override 한다.</p>
+<ul>
+<li>[<a href="https://www.latera.kr/reference/java/2019-09-29-spring-boot-config-externalize/">Spring Boot] 외부에서 설정 주입하기 - Increment (latera.kr)</a></li>
+<li><a href="https://theuphill.tistory.com/12">완전히 실행 가능한 Spring Boot 배포 (tistory.com)</a></li>
+</ul>
+<h2 id="application-yml-esse-hwanggyeonbbyeosu-sahyon">application.yml 에서 환경변수 사용</h2>
+<p><code>${변수명}</code> 형식을 사용해 환경변수가 가진 값으로 대치되도록 지정할 수 있다.</p>
+<pre><code>server:
+  address: ${SERVER_IP}
+  port: ${SERVER_PORT}
+</code></pre>
+<p>환경변수가 존재하지 않을 때의 기본사용값을 지정할 수도 있다.</p>
+<pre><code>logging:
+  level:
+    root: ${LOGGING_LEVEL_ROOT:info}
+</code></pre>
+<p>사용자의 홈 디렉토리는 <code>${user.home}</code> 으로 참조할 수 있다.</p>
+<ul>
+<li>
+<p><a href="https://stackoverflow.com/questions/23027315/does-application-yml-support-environment-variables">java - Does application.yml support environment variables? - Stack Overflow</a></p>
+</li>
+<li>
+<p>https://stackoverflow.com/a/61372261</p>
+</li>
+</ul>
+<h1 id="deploy">deploy</h1>
+<h2 id="nginx-hyeoddon">nginx 연동</h2>
+<p>특정 경로를 WAS 로 리다이렉트한다.</p>
+<p><code>/etc/nginx/sites-available/xxxxxx.com</code>  설정에 추가한다.</p>
+<pre><code>server {
+
+		...
+
+
+		location &#x2F;xxx {
+                proxy_pass http:&#x2F;&#x2F;localhost:8080&#x2F;xxx;
+                proxy_ssl_server_name on;
+        }
+
+		...
+
+}
+</code></pre>
+<p><code>proxy_ssl_server_name on;</code> 이 없으면 502 에러가 발생할 수 있다.</p>
+<ul>
+<li>https://stackoverflow.com/a/49116797</li>
+</ul>
+<h2 id="pid-pail-jaddon-ssaensseon">pid 파일 자동 생성</h2>
+<p><code>spring.pid.file</code> 설정을 지정하면 해당 경로 파일에 실행된 프로세스의 pid 를 저장한다.</p>
+<p><code>ApplicationPidFileWriter</code> 를 어플리케이션 리스너로 등록해줘야 한다.</p>
+<pre><code>@SpringBootApplication
+class SomeApplication
+
+fun main(args: Array&lt;String&gt;) {
+    SpringApplication(SomeApplication::class.java)
+        .apply {
+            addListeners(ApplicationPidFileWriter())
+        }
+        .run(*args)
+}
+</code></pre>
+<p>pid 파일 생성 경로를 설정할 수 있다.</p>
+<pre><code>spring:
+  pid:
+    file: &#x2F;xxx&#x2F;yyy&#x2F;zzz.pid
+</code></pre>
+<ul>
+<li>
+<p><a href="https://toshi15shkim.github.io/articles/2019-09/spring-boot-pid">Boot로 실행시 pid 자동 생성 방법 | Toshi의 개발 블로그 (toshi15shkim.github.io)</a></p>
+</li>
+<li>
+<p><a href="https://jheloper.github.io/2019/05/spring-boot-pid-file/">스프링 부트 PID(Process Identifier) 파일 생성 방법 (jheloper.github.io)</a></p>
+</li>
+</ul>
+<h2 id="spring-boot-haeheu-ssebissero-ddeunrog">spring boot 앱을 서비스로 등록</h2>
+<ul>
+<li><a href="https://www.dante2k.com/564">ubuntu server systemd 에 spring boot jar 서비스로 등록하기 (dante2k.com)</a></li>
+</ul>
+<h1 id="jpa">JPA</h1>
+<h2 id="h2-database-reul-deiteosossero-sahyon">H2 Database 를 데이터소스로 사용</h2>
+<p>build.gradle.kts 의존성 설정</p>
+<pre><code>implementation(&quot;org.springframework.boot:spring-boot-starter-data-jpa&quot;)
+implementation(&quot;com.h2database:h2&quot;)
+</code></pre>
+<p>application.yml 설정</p>
+<pre><code>spring:
+  h2:
+    console:
+      enabled: false
+      path: &quot;&#x2F;h2&quot;
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:xxxx
+    username : yyyy
+    password : zzzz
+</code></pre>
+<p>메모리 DB 로 사용할 경우</p>
+<pre><code>spring.datasource.url=jdbc:h2:mem:xxxx
+</code></pre>
+<p>파일 DB 로 사용할 경우</p>
+<pre><code>spring.datasource.url=jdbc:h2:file:~&#x2F;xxxx
+</code></pre>
+<ul>
+<li><a href="https://www.baeldung.com/spring-boot-h2-database">Spring Boot With H2 Database | Baeldung</a></li>
+<li>https://stackoverflow.com/a/47217202</li>
+</ul>
+<h2 id="kotlin-sseojjeon">kotlin 설정</h2>
+<p>build.gradle.kts 에 JPA 사용을 위한 설정을 추가한다.</p>
+<pre><code>plugins {
+
+    val kotlinVersion = &quot;1.6.21&quot;
+
+	...중략...
+	
+    kotlin(&quot;plugin.jpa&quot;) version &quot;${kotlinVersion}&quot;
+    kotlin(&quot;plugin.allopen&quot;) version &quot;${kotlinVersion}&quot;
+    kotlin(&quot;plugin.noarg&quot;) version &quot;${kotlinVersion}&quot;
+}
+
+noArg {
+    annotation(&quot;javax.persistence.Entity&quot;)
+}
+
+allOpen {
+    annotation(&quot;javax.persistence.Entity&quot;)
+    annotation(&quot;javax.persistence.MappedSuperclass&quot;)
+    annotation(&quot;javax.persistence.Embeddable&quot;)
+}
+</code></pre>
+<h3 id="camgo">참고</h3>
+<ul>
+<li><a href="https://minkukjo.github.io/study/docs/spring/jpa/kotlin-jpa-guide/">Kotlin JPA 개발 가이드 | 도전하는 개발자 (minkukjo.github.io)</a></li>
+</ul>
+<h1 id="cli">CLI</h1>
+<h2 id="cli-eopeulrikeissyeoeuro-sseojjeon">CLI 어플리케이션으로 설정</h2>
+<p>어플리케이션이 CommandLineRunner 인터페이스를 구현하도록 한다.</p>
+<pre><code>@SpringBootApplication
+class SomeApplication : CommandLineRunner{
+    override fun run(vararg args: String?) {
+        &#x2F;&#x2F;TODO SOMETHING
+    }
+}
+
+fun main(args: Array&lt;String&gt;) {
+    runApplication&lt;DcWorkerApplication&gt;(*args)
+}
+</code></pre>
+<h1 id="logging">Logging</h1>
+<p>아래와 같이 logger 객체를 생성하고 사용할 수 있다.</p>
+<pre><code>...
+import org.slf4j.LoggerFactory
+...
+
+class SomeClass{
+	private val logger = LoggerFactory.getLogger(javaClass)
+}
+</code></pre>
+<p>application.yml 에 로 관련 설정을 한다.</p>
+<pre><code>logging:
+  file:
+    name: logs&#x2F;some_application.log
+  logback:
+    rollingpolicy:
+      max-file-size: 5MB
+  level:
+    root: error
+    com.some.app: info
+
+</code></pre>
+
+    </div>
+
+    
+    <div class="article-info">
+        
+        <div class="article-date"> 8 July 2022</div>
+        
+        <div class="article-taxonomies">
+            
+            
+                <ul class="article-tags">
+                    
+                    <li><a href="https://jeonconnect.github.io/tags/spring-boot/">#spring boot</a></li>
+                    
+                </ul>
+            
+        </div>
+    </div>
+
+</article>
+
+
+        </main>
+        <footer>
+            <p>
+                © jeonconnect 2022
+                <br>
+                Powered by <a target="_blank" href="https://getzola.org/">Zola</a>, Theme <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme">Anpu</a>.
+            </p>
+            <p>
+                
+                
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <title>powershell</title>
+    <meta name="description" content="blog">
+
+    <link rel="stylesheet" href="https://jeonconnect.github.io/main.css">
+
+    
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://jeonconnect.github.io/atom.xml">
+    
+
+    
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to content</a>
+    <div class="container">
+        <header> 
+            <h1 class="site-header">
+                <a href="https:&#x2F;&#x2F;jeonconnect.github.io">jeonconnect</a>
+            </h1>
+            <nav>
+                
+                
+                
+                <a  href="https:&#x2F;&#x2F;jeonconnect.github.io&#x2F;about&#x2F;">About</a>
+                
+                
+                <a  href="https:&#x2F;&#x2F;jeonconnect.github.io&#x2F;tags&#x2F;">Tags</a>
+                
+                
+            </nav>
+        </header>
+        <main id="main" tabindex="-1">
+            
+
+<article class="post">
+    <header>
+        <h1>powershell</h1>
+    </header>
+
+    <div class="content">
+
+        <!--
+            목차 표시 추가
+            https://www.getzola.org/documentation/content/table-of-contents/
+        -->
+        
+        <ul>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/powershell/#sseoci">설치</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#macosesse-sseocihagi">MacOS에서 설치하기</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#ubuntu-20-04esse-sseocihagi">Ubuntu 20.04에서 설치하기</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/powershell/#gibbomunbbeosathan">기본문법사항</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#jaddonbbyeosu">자동변수</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#bbahyeo">배열</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#haesiteibbeu">해시테이블</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#munjahyeo">문자열</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#keulrojje">클로저</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/powershell/#moddyu">모듈</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#psfzf">PSFzf</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/powershell/#pailsissetot">파일시스템</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#ringkeu">링크</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#ssaje">삭제</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/powershell/#hweoggyeo">원격</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#ssh">ssh</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://jeonconnect.github.io/powershell/#myeongryeongeo">명령어</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://jeonconnect.github.io/powershell/#were-exe">were.exe</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+        </ul>
+        
+        <!-- 목차 표시 추가 끝 -->
+
+
+        <h1 id="sseoci">설치</h1>
+<h2 id="macosesse-sseocihagi">MacOS에서 설치하기</h2>
+<p>설치</p>
+<pre><code>brew install --cask powershell
+</code></pre>
+<p>업그레이드</p>
+<pre><code>brew update
+brew upgrade powershell --cask
+</code></pre>
+<h3 id="camgo">참고</h3>
+<ul>
+<li>https://docs.microsoft.com/ko-kr/powershell/scripting/install/installing-powershell-on-macos?view=powershell-7.2</li>
+<li>https://zigford.org/setting-powershell-as-default-on-macos.htmls
+<ul>
+<li>기본 쉘로 설정</li>
+</ul>
+</li>
+</ul>
+<h2 id="ubuntu-20-04esse-sseocihagi">Ubuntu 20.04에서 설치하기</h2>
+<pre><code># Update the list of packages
+sudo apt-get update
+# Install pre-requisite packages.
+sudo apt-get install -y wget apt-transport-https software-properties-common
+# Download the Microsoft repository GPG keys
+wget -q https:&#x2F;&#x2F;packages.microsoft.com&#x2F;config&#x2F;ubuntu&#x2F;20.04&#x2F;packages-microsoft-prod.deb
+# Register the Microsoft repository GPG keys
+sudo dpkg -i packages-microsoft-prod.deb
+# Update the list of packages after we added packages.microsoft.com
+sudo apt-get update
+# Install PowerShell
+sudo apt-get install -y powershell
+# Start PowerShell
+pwsh
+</code></pre>
+<h3 id="camgo-1">참고</h3>
+<ul>
+<li><a href="https://docs.microsoft.com/ko-kr/powershell/scripting/install/install-ubuntu?view=powershell-7.2">Ubuntu에 PowerShell 설치 - PowerShell | Microsoft Docs</a></li>
+</ul>
+<h1 id="gibbomunbbeosathan">기본문법사항</h1>
+<h2 id="jaddonbbyeosu">자동변수</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/ko-kr/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-7.2&amp;viewFallbackFrom=powershell-7.4">자동 변수 정보 - PowerShell | Microsoft Docs</a></li>
+</ul>
+<h2 id="bbahyeo">배열</h2>
+<h3 id="ssaensseon">생성</h3>
+<pre><code>$a = 1, 2, 3
+</code></pre>
+<h3 id="bbi-bbahyeo-ssaensseon">빈 배열 생성</h3>
+<pre data-lang="powershell" class="language-powershell "><code class="language-powershell" data-lang="powershell">$a = @()
+</code></pre>
+<h2 id="haesiteibbeu">해시테이블</h2>
+<h3 id="ssaensseon-1">생성</h3>
+<pre><code>$a = @{a=1;b=2}
+</code></pre>
+<h3 id="bbi-haesiteibbeu-ssaensseon">빈 해시테이블 생성</h3>
+<pre data-lang="powershell" class="language-powershell "><code class="language-powershell" data-lang="powershell">$a = @{}
+</code></pre>
+<h2 id="munjahyeo">문자열</h2>
+<h3 id="issekeipeu">이스케이프</h3>
+<p>이스케이프를 위해 <kbd>`</kbd> 를 사용한다.</p>
+<pre><code>$foo = @&quot;
+a
+b
+c
+&quot;@.Replace(&quot;`r`n&quot;,&quot;&quot;).Replace(&#x27;a&#x27;,&#x27;&#x27;)
+</code></pre>
+<h2 id="keulrojje">클로저</h2>
+<p>스크립트 블럭에서 바깥 스코프의 변수를 참조할 수 있다.</p>
+<pre data-lang="powershell" class="language-powershell "><code class="language-powershell" data-lang="powershell">$a = 1, 2, 3
+$b = { return &quot;a&quot;, &quot;b&quot;, $a[0] }
+&amp; $b #스크립트 블럭 실행
+</code></pre>
+<h1 id="moddyu">모듈</h1>
+<h2 id="psfzf">PSFzf</h2>
+<p>fzf 기능 통합</p>
+<ul>
+<li><a href="https://github.com/kelleyma49/PSFzf">kelleyma49/PSFzf: A PowerShell wrapper around the fuzzy finder fzf (github.com)</a></li>
+</ul>
+<h1 id="pailsissetot">파일시스템</h1>
+<h2 id="ringkeu">링크</h2>
+<p>심볼릭 링크</p>
+<pre data-lang="powershell" class="language-powershell "><code class="language-powershell" data-lang="powershell">New-Item -ItemType SymbolicLink -Path &quot;Link&quot; -Target &quot;Target&quot;
+</code></pre>
+<p>하드링크</p>
+<pre><code>New-Item -ItemType HardLink -Path &quot;Link&quot; -Target &quot;Target&quot; 
+</code></pre>
+<h3 id="camgo-2">참고</h3>
+<ul>
+<li><a href="https://winaero.com/create-symbolic-link-windows-10-powershell/">Create Symbolic Link in Windows 10 with PowerShell (winaero.com)</a></li>
+</ul>
+<h2 id="ssaje">삭제</h2>
+<p>삭제시 <code>-Force</code> 스위치를 붙이지 않으면 권한 문제가 발생하는 경우가 많다.</p>
+<pre><code>Remove-Item &quot;c:\some\path&quot; -Recurse -Force
+</code></pre>
+<h3 id="camgo-3">참고</h3>
+<ul>
+<li><a href="https://stackoverflow.com/a/25806947">https://stackoverflow.com/a/25806947</a></li>
+</ul>
+<h1 id="hweoggyeo">원격</h1>
+<h2 id="ssh">ssh</h2>
+<p>아래와 같은 방식으로 원격지의 ssh 서버에 대해서 여러 명령을 실행시킬 수 있다.</p>
+<pre><code>ssh -tt username@some.server.com @&quot;
+pwd
+sudo ls &#x2F;etc
+&quot;@.replace(&quot;`r&quot;,&quot;&quot;)
+</code></pre>
+<h1 id="myeongryeongeo">명령어</h1>
+<h2 id="were-exe">were.exe</h2>
+<p>실행파일의 위치를 알려준다.
+<code>where</code> 는 다른 명령어의 alias 로 등록되어 있기 때문에 <code>where.exe</code> 로 실행해야 한다.</p>
+<pre data-lang="powershell" class="language-powershell "><code class="language-powershell" data-lang="powershell"># 예시
+where.exe flutter dart
+</code></pre>
+
+    </div>
+
+    
+    <div class="article-info">
+        
+        <div class="article-date">12 July 2022</div>
+        
+        <div class="article-taxonomies">
+            
+            
+                <ul class="article-tags">
+                    
+                    <li><a href="https://jeonconnect.github.io/tags/powershell/">#powershell</a></li>
+                    
+                </ul>
+            
+        </div>
+    </div>
+
+</article>
+
+
+        </main>
+        <footer>
+            <p>
+                © jeonconnect 2022
+                <br>
+                Powered by <a target="_blank" href="https://getzola.org/">Zola</a>, Theme <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme">Anpu</a>.
+            </p>
+            <p>
+                
+                
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
