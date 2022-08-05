@@ -87,26 +87,6 @@ pwsh
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.microsoft.com&#x2F;ko-kr&#x2F;powershell&#x2F;scripting&#x2F;install&#x2F;install-ubuntu?view=powershell-7.2&quot;&gt;Ubuntu에 PowerShell 설치 - PowerShell | Microsoft Docs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h1 id=&quot;pailsissetot&quot;&gt;파일시스템&lt;&#x2F;h1&gt;
-&lt;h2 id=&quot;ringkeu&quot;&gt;링크&lt;&#x2F;h2&gt;
-&lt;p&gt;심볼릭 링크&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;New-Item -ItemType SymbolicLink -Path &amp;quot;Link&amp;quot; -Target &amp;quot;Target&amp;quot;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;하드링크&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;New-Item -ItemType HardLink -Path &amp;quot;Link&amp;quot; -Target &amp;quot;Target&amp;quot; 
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;camgo-2&quot;&gt;참고&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;winaero.com&#x2F;create-symbolic-link-windows-10-powershell&#x2F;&quot;&gt;Create Symbolic Link in Windows 10 with PowerShell (winaero.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;ssaje&quot;&gt;삭제&lt;&#x2F;h2&gt;
-&lt;p&gt;삭제시 &lt;code&gt;-Force&lt;&#x2F;code&gt; 스위치를 붙이지 않으면 권한 문제가 발생하는 경우가 많다.&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;Remove-Item &amp;quot;c:\some\path&amp;quot; -Recurse -Force
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;camgo-3&quot;&gt;참고&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;25806947&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;25806947&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 &lt;h1 id=&quot;gibbomunbbeosathan&quot;&gt;기본문법사항&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;jaddonbbyeosu&quot;&gt;자동변수&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -141,6 +121,32 @@ c
 $b = { return &amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, $a[0] }
 &amp;amp; $b #스크립트 블럭 실행
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;moddyu&quot;&gt;모듈&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;psfzf&quot;&gt;PSFzf&lt;&#x2F;h2&gt;
+&lt;p&gt;fzf 기능 통합&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kelleyma49&#x2F;PSFzf&quot;&gt;kelleyma49&#x2F;PSFzf: A PowerShell wrapper around the fuzzy finder fzf (github.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;pailsissetot&quot;&gt;파일시스템&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;ringkeu&quot;&gt;링크&lt;&#x2F;h2&gt;
+&lt;p&gt;심볼릭 링크&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;New-Item -ItemType SymbolicLink -Path &amp;quot;Link&amp;quot; -Target &amp;quot;Target&amp;quot;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;하드링크&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;New-Item -ItemType HardLink -Path &amp;quot;Link&amp;quot; -Target &amp;quot;Target&amp;quot; 
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;camgo-2&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;winaero.com&#x2F;create-symbolic-link-windows-10-powershell&#x2F;&quot;&gt;Create Symbolic Link in Windows 10 with PowerShell (winaero.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ssaje&quot;&gt;삭제&lt;&#x2F;h2&gt;
+&lt;p&gt;삭제시 &lt;code&gt;-Force&lt;&#x2F;code&gt; 스위치를 붙이지 않으면 권한 문제가 발생하는 경우가 많다.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;Remove-Item &amp;quot;c:\some\path&amp;quot; -Recurse -Force
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;camgo-3&quot;&gt;참고&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;25806947&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;25806947&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h1 id=&quot;hweoggyeo&quot;&gt;원격&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;ssh&quot;&gt;ssh&lt;&#x2F;h2&gt;
 &lt;p&gt;아래와 같은 방식으로 원격지의 ssh 서버에 대해서 여러 명령을 실행시킬 수 있다.&lt;&#x2F;p&gt;
@@ -149,12 +155,13 @@ pwd
 sudo ls &amp;#x2F;etc
 &amp;quot;@.replace(&amp;quot;`r&amp;quot;,&amp;quot;&amp;quot;)
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h1 id=&quot;moddyu&quot;&gt;모듈&lt;&#x2F;h1&gt;
-&lt;h2 id=&quot;psfzf&quot;&gt;PSFzf&lt;&#x2F;h2&gt;
-&lt;p&gt;fzf 기능 통합&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kelleyma49&#x2F;PSFzf&quot;&gt;kelleyma49&#x2F;PSFzf: A PowerShell wrapper around the fuzzy finder fzf (github.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;myeongryeongeo&quot;&gt;명령어&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;were-exe&quot;&gt;were.exe&lt;&#x2F;h2&gt;
+&lt;p&gt;실행파일의 위치를 알려준다.
+&lt;code&gt;where&lt;&#x2F;code&gt; 는 다른 명령어의 alias 로 등록되어 있기 때문에 &lt;code&gt;where.exe&lt;&#x2F;code&gt; 로 실행해야 한다.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell &quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;# 예시
+where.exe flutter dart
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
 	</entry>
 	<entry xml:lang="en">
