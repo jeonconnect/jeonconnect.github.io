@@ -5,8 +5,22 @@
 	<link href="https://jeonconnect.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://jeonconnect.github.io"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-08-05T00:00:00+00:00</updated>
+	<updated>2022-09-20T00:00:00+00:00</updated>
 	<id>https://jeonconnect.github.io/atom.xml</id>
+	<entry xml:lang="en">
+		<title>javascript</title>
+		<published>2022-09-20T00:00:00+00:00</published>
+		<updated>2022-09-20T00:00:00+00:00</updated>
+		<link href="https://jeonconnect.github.io/javascript/" type="text/html"/>
+		<id>https://jeonconnect.github.io/javascript/</id>
+		<content type="html">&lt;h1 id=&quot;siggajjeonmildo&quot;&gt;시간정밀도&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;DOMHighResTimeStamp&lt;&#x2F;code&gt; 는 &lt;code&gt;performance.now()&lt;&#x2F;code&gt; 로 얻을 수 있으며 보다 정밀한 시간값을 제공한다.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;performance.now()&lt;&#x2F;code&gt; 는 페이지가 로딩 시점부터의 경과시간을 리턴한다.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;performance.timing.navigationStart + performance.now()&lt;&#x2F;code&gt; 는 &lt;code&gt;Date.now()&lt;&#x2F;code&gt; 와 대략 같은 값을 가진다.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>flutter</title>
 		<published>2022-08-05T00:00:00+00:00</published>
