@@ -5,8 +5,25 @@
 	<link href="https://jeonconnect.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://jeonconnect.github.io"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-09-20T00:00:00+00:00</updated>
+	<updated>2022-09-28T00:00:00+00:00</updated>
 	<id>https://jeonconnect.github.io/atom.xml</id>
+	<entry xml:lang="en">
+		<title>typescript</title>
+		<published>2022-09-28T00:00:00+00:00</published>
+		<updated>2022-09-28T00:00:00+00:00</updated>
+		<link href="https://jeonconnect.github.io/typescript/" type="text/html"/>
+		<id>https://jeonconnect.github.io/typescript/</id>
+		<content type="html">&lt;h1 id=&quot;ssansureul-taibeuro-jijjeonhagi&quot;&gt;상수를 타입으로 지정하기&lt;&#x2F;h1&gt;
+&lt;pre&gt;&lt;code&gt;export const A = &amp;#x27;a&amp;#x27;
+export const B = &amp;#x27;b&amp;#x27;
+export const C = &amp;#x27;c&amp;#x27;
+export type T = typeof A | typeof B | typeof C
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;44884838&#x2F;what-is-const-type-pattern-in-typescript&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>javascript</title>
 		<published>2022-09-20T00:00:00+00:00</published>

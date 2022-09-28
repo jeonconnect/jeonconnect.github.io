@@ -57,6 +57,9 @@
         <loc>https://jeonconnect.github.io/page/2/</loc>
     </url>
     <url>
+        <loc>https://jeonconnect.github.io/page/3/</loc>
+    </url>
+    <url>
         <loc>https://jeonconnect.github.io/powershell/</loc>
         <lastmod>2022-07-12</lastmod>
     </url>
@@ -114,6 +117,9 @@
         <loc>https://jeonconnect.github.io/tags/tauri/</loc>
     </url>
     <url>
+        <loc>https://jeonconnect.github.io/tags/typescript/</loc>
+    </url>
+    <url>
         <loc>https://jeonconnect.github.io/tags/ubuntu/</loc>
     </url>
     <url>
@@ -128,6 +134,10 @@
     <url>
         <loc>https://jeonconnect.github.io/tauri/</loc>
         <lastmod>2022-03-12</lastmod>
+    </url>
+    <url>
+        <loc>https://jeonconnect.github.io/typescript/</loc>
+        <lastmod>2022-09-28</lastmod>
     </url>
     <url>
         <loc>https://jeonconnect.github.io/ubuntu-20-04/</loc>
