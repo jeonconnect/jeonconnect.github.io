@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjeonconnect_github_io_docusaurus=self.webpackChunkjeonconnect_github_io_docusaurus||[]).push([[649],{3756:e=>{e.exports=JSON.parse('{"title":"\uc815\ub9ac\ub178\ud2b8","slug":"/category/\uc815\ub9ac\ub178\ud2b8","permalink":"/docs/category/\uc815\ub9ac\ub178\ud2b8","navigation":{"next":{"title":"java","permalink":"/docs/notes/java"}}}')}}]);
